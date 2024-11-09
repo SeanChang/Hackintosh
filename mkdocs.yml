@@ -1,0 +1,113 @@
+site_name: Hackintosh How To Guides:Hackintosh.tools
+site_url: https://hackintosh.tools
+site_author: xuanyuan
+site_description: "macOS Sonoma and OS X Ventura Hackintosh instructions, tutorials, step-by-step how to guides and installation videos; Hackintosh systems, parts and more."
+repo_name: SeanChang/hackintosh
+repo_url: https://github.com/SeanChang/hackintosh
+copyright: Copyright &copy; 2022 - 2024 xuanyuan.me
+
+theme:
+  name: material
+  icon:
+      logo: material/apple
+      repo: fontawesome/brands/git-alt
+  favicon: https://xuanyuan.me/hackintosh/logo.webp
+  features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - search.suggest
+      - search.highlight
+      - search.share
+  palette:
+    # Toggle light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: dark mode
+    # Toggle dark mode
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: light mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/redhat
+      link: https://www.xuanyuan.me/blog
+      name: xuanyuan.me
+nav:
+  - Introduction:
+    - Background: "Introduction/Background.md"
+    - Precautions: "Introduction/Precautions.md"
+  - Basic knowledge:
+    - Introduction: "Basic knowledge/Introduction.md"
+    - Drivers: "Basic knowledge/Drivers.md"
+    - Hardware: "Basic knowledge/Hardware.md"
+    - Terminology: "Basic knowledge/Terminology.md"
+  - USB flash drive creation:
+    - Download the image: "USB flash drive creation/Download the image.md"
+    - Write to the image: "USB flash drive creation/Write to the image.md"
+    - Structural Explanation: "USB flash drive creation/Structural Explanation.md"
+  - Preparation:
+    - BIOS settings: "Preparation/BIOS settings.md"
+    - Original file structure: "Preparation/OC file structure.md"
+    - APCI&SSDT: "Preparation/APCI&SSDT.md"
+    - Kext: "Preparation/Kext.md"
+    - Drivers: "Preparation/Drivers.md"
+    - OC editor: "Preparation/OC editor.md"
+    - Preliminary configuration: "Preparation/Preliminary configuration.md"
+    - Kexts fine - tuning: "Preparation/Kexts fine - tuning.md"
+  - OpenCore Configuration:
+    - Quiks: "OpenCore Configuration/Quiks.md"
+    - UEFI: "OpenCore Configuration/UEFI.md"
+    - PCI: "OpenCore Configuration/PCI.md"
+    - Kernel: "OpenCore Configuration/Kernel.md"
+    - Misc: "OpenCore Configuration/Misc.md"
+    - NVRAM: "OpenCore Configuration/NVRAM.md"
+    - SMBIOS: "OpenCore Configuration/SMBIOS.md"
+    - config.list: "OpenCore Configuration/config.list.md"
+  - Demonstration:
+    - Machine Overview: "Demonstration/Machine Overview.md"
+    - BIOS: "Demonstration/BIOS.md"
+    - Windows&macOS: "Demonstration/Windows&macOS.md"
+    - WinNTSetup: "Demonstration/WinNTSetup.md"
+    - Hackintosh: "Demonstration/Hackintosh.md"
+    - Complete Success: "Demonstration/Complete Success.md"
+  - Professional customization:
+    - USB customization: "Professional customization/USB customization.md"
+    - Compile the touchpad driver: "Professional customization/Compile the touchpad driver.md"
+    - Touchpad Interrupt Example: "Professional customization/Touchpad Interrupt Example.md"
+    - Dual - graphics - card display on a desktop computer: "Professional customization/Dual - graphics - card display on a desktop computer.md"
+    - Enable HiDPi: "Professional customization/Enable HiDPi.md"
+    - Troubleshooting Sleep Issues: "Professional customization/Troubleshooting Sleep Issues.md"
+    - Bluetooth in macOS 12: "Professional customization/Bluetooth in macOS 12.md"
+    - Mask the unsupported hard drives: "Professional customization/Mask the unsupported hard drives.md"
+    - AMD discrete graphics card optimization without driver installation: "Professional customization/AMD discrete graphics card optimization without driver installation.md"
+    - OC theme and boot entries: "Professional customization/OC theme and boot entries.md"
+    - Touch - screen Driver under macOS: "Professional customization/Touch - screen Driver under macOS.md"
+    - Customize the monitor icon: "Professional customization/Customize the monitor icon.md"
+    - Customization of Integrated Graphics Interface Output: "Professional customization/Customization of Integrated Graphics Interface Output.md"
+  - Perfect Hackintosh:
+    - Hackintosh: "Perfect Hackintosh/Hackintosh.md"
+    - Genuine Mac: "Perfect Hackintosh/Genuine Mac.md"
+  - OpenCore Error Troubleshooting:
+    - Abnormal Log: "OpenCore Error Troubleshooting/Abnormal Log.md"
+    - Normal Log: "OpenCore Error Troubleshooting/Normal Log.md"
+  - Frequently Asked Questions (FAQ):
+    - Usage method: "Frequently Asked Questions (FAQ)/Usage method.md"
+    - Question list: "Frequently Asked Questions (FAQ)/Question list.md"

@@ -1,0 +1,1 @@
+Just refer to the official one here: [https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html](https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html)

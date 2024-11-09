@@ -1,0 +1,5 @@
+## Precautions
+
+Writing this tutorial is not to encourage everyone to use the pirated macOS system. Of course, I also strongly recommend that everyone support Apple's genuine system and buy a genuine Mac to experience it.
+Everything that exists is reasonable. The English name of Hackintosh is Hackintosh, and the word "Hack" appears in it. When it comes to Hack, we have to mention several basic spirits of Hackers: love, rebellion, sharing, open source, and free... Therefore, Hackintosh itself also inherits these characteristics. Just imagine, if the famous Hackintosh kexts drivers such as Lilu, WhateverGreen, and AppleALC were not open source, would Hackintosh technology still have anything to do with ordinary people like us? Essentially, we are just porters of some kexts and haven't created anything ourselves. We just do some basic permutations and combinations. This is also the reason why I also adhere to open - sourcing the EFI. After all, we should not forget those who dug the well when we drink water.
+Well, after saying a lot of messy things, the Hackintosh tutorial officially begins now.
