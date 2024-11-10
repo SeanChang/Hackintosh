@@ -4,9 +4,9 @@ Hackintosh is doomed to become history. However, it's a pity that until Hackinto
 Actually, [the OpenCore official documentation](https://dortania.github.io/OpenCore-Install-Guide/)is already very good. Most of the content of this tutorial will also be borrowed from the OpenCore official documentation. The original files of this tutorial have also been open - sourced, and the project address is:[https://github.com/SeanChang/Hackintosh](https://github.com/SeanChang/Hackintosh)
 
 ##Guides
-|[Introduction](/Introduction/Background/)|[Basic knowledge](/Basic/Introduction/)|[USB flash drive creation](/USB Drive/Download the image/)|[Preparation](/Preparation/BIOS settings/)| [OpenCore Configuration](/OC Config/Quiks/) |
+|[1.Introduction](/Introduction/Background/)|[2.Basic knowledge](/Basic/Introduction/)|[3.USB flash drive creation](/USB Drive/Download the image/)|[4.Preparation](/Preparation/BIOS settings/)| [5.OpenCore Configuration](/OC Config/Quiks/) |
 | ----- | ----- | ----- | ----- | ----- |
-|**[Demonstration](/Demonstration/Machine Overview/)**|**[Professional customization](/High customization/USB customization/)**|**[Perfect Hackintosh](/Perfect Hackintosh/Hackintosh/)**|**[OpenCore Error Troubleshooting](/OC Error Troubleshooting/Abnormal Log/)**|**[FAQ](/FAQ/Question list/)**|
+|**[6.Demonstration](/Demonstration/Machine Overview/)**|**[7.Professional customization](/High customization/USB customization/)**|**[8.Perfect Hackintosh](/Perfect Hackintosh/Hackintosh/)**|**[9.OpenCore Error Troubleshooting](/OC Error Troubleshooting/Abnormal Log/)**|**[10.FAQ](/FAQ/Question list/)**|
 
 ##Hackintosh Instructions & Tutorials & Videos
 Knowledgeable contributors have furnished comprehensive "how-to" guides and tutorials, along with valuable insights for installing OS X on a diverse range of devices, including self-assembled desktop systems, notebooks, net books, and more.
