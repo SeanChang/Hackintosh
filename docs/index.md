@@ -3,6 +3,9 @@ Hackintosh is doomed to become history. However, it's a pity that until Hackinto
 
 Actually, [the OpenCore official documentation](https://dortania.github.io/OpenCore-Install-Guide/)is already very good. Most of the content of this tutorial will also be borrowed from the OpenCore official documentation. The original files of this tutorial have also been open - sourced, and the project address is:[https://github.com/SeanChang/Hackintosh](https://github.com/SeanChang/Hackintosh)
 
+##Blog
+[EVM FN60G Hackintosh and Sequoia Installation Tutorial](/Blog/FEVM-FN60G-Hackintosh-and-Sequoia-Installation-Tutorial/)
+
 ##Guides
 |[1.Introduction](/Introduction/Background/)|[2.Basic knowledge](/Basic/Introduction/)|[3.USB flash drive creation](/USB Drive/Download the image/)|[4.Preparation](/Preparation/BIOS settings/)| [5.OpenCore Configuration](/OC Config/Quiks/) |
 | ----- | ----- | ----- | ----- | ----- |

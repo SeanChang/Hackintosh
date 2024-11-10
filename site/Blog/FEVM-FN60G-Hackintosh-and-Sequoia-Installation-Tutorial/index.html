@@ -1,0 +1,3027 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="macOS Sonoma and OS X Ventura Hackintosh instructions, tutorials, step-by-step how to guides and installation videos; Hackintosh systems, parts and more.">
+      
+      
+        <meta name="author" content="xuanyuan">
+      
+      
+        <link rel="canonical" href="https://hackintosh.tools/Blog/FEVM-FN60G-Hackintosh-and-Sequoia-Installation-Tutorial/">
+      
+      
+      
+      
+      <link rel="icon" href="https://xuanyuan.me/hackintosh/logo.png">
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7G5ZM2ZZ5J"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7G5ZM2ZZ5J');
+      </script>
+      <!-- Google ads -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6708353961519889" crossorigin="anonymous"></script>
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+      <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "owc23kvdeg");
+      </script>
+    
+    
+      
+        <title>FEVM FN60G Hackintosh and Sequoia Installation Tutorial - Hackintosh How To Guides:Hackintosh.tools</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fevm-fn60g-hackintosh-and-sequoia-installation-tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Hackintosh How To Guides:Hackintosh.tools" class="md-header__button md-logo" aria-label="Hackintosh How To Guides:Hackintosh.tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hackintosh How To Guides:Hackintosh.tools
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FEVM FN60G Hackintosh and Sequoia Installation Tutorial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SeanChang/hackintosh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SeanChang/hackintosh
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Introduction/Background/" class="md-tabs__link">
+          
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Basic/Introduction/" class="md-tabs__link">
+          
+  
+  Basic
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../USB%20Drive/Download%20the%20image/" class="md-tabs__link">
+          
+  
+  USB Drive
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Preparation/BIOS%20settings/" class="md-tabs__link">
+          
+  
+  Preparation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../OC%20Config/Quiks/" class="md-tabs__link">
+          
+  
+  OC Config
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Demonstration/Machine%20Overview/" class="md-tabs__link">
+          
+  
+  Demonstration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../High%20Customization/USB%20customization/" class="md-tabs__link">
+          
+  
+  High Customization
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Perfect%20Hackintosh/Hackintosh/" class="md-tabs__link">
+          
+  
+  Perfect Hackintosh
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../OC%20Error%20Troubleshooting/Abnormal%20Log/" class="md-tabs__link">
+          
+  
+  OC Error Troubleshooting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../FAQ/Usage%20method/" class="md-tabs__link">
+          
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hackintosh How To Guides:Hackintosh.tools" class="md-nav__button md-logo" aria-label="Hackintosh How To Guides:Hackintosh.tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+
+    </a>
+    Hackintosh How To Guides:Hackintosh.tools
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SeanChang/hackintosh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SeanChang/hackintosh
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Introduction/Background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Introduction/Precautions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Precautions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Basic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic/Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic/Drivers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drivers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic/Hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic/Terminology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    USB Drive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            USB Drive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USB%20Drive/Download%20the%20image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download the image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USB%20Drive/Write%20to%20the%20image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Write to the image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USB%20Drive/Structural%20Explanation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structural Explanation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Preparation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Preparation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/BIOS%20settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIOS settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/OC%20file%20structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Original file structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/APCI%26SSDT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APCI&SSDT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/Kext/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kext
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/Drivers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drivers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/OC%20editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OC editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/Preliminary%20configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preliminary configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Preparation/Kexts%20fine%20-%20tuning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kexts fine - tuning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OC Config
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            OC Config
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/Quiks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quiks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/UEFI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UEFI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/PCI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/Kernel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/Misc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/NVRAM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NVRAM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/SMBIOS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMBIOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Config/config.list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    config.list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Demonstration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Demonstration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Demonstration/Machine%20Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Demonstration/BIOS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Demonstration/Windows%26macOS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows&macOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Demonstration/WinNTSetup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WinNTSetup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Demonstration/Hackintosh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hackintosh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Demonstration/Complete%20Success/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complete Success
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    High Customization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            High Customization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/USB%20customization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USB customization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Compile%20the%20touchpad%20driver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compile the touchpad driver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Touchpad%20Interrupt%20Example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Touchpad Interrupt Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Dual%20-%20graphics%20-%20card%20display%20on%20a%20desktop%20computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dual - graphics - card display on a desktop computer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Enable%20HiDPi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enable HiDPi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Troubleshooting%20Sleep%20Issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting Sleep Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Bluetooth%20in%20macOS%2012/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bluetooth in macOS 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Mask%20the%20unsupported%20hard%20drives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mask the unsupported hard drives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/AMD%20discrete%20graphics%20card%20optimization%20without%20driver%20installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AMD discrete graphics card optimization without driver installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/OC%20theme%20and%20boot%20entries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OC theme and boot entries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Touch%20-%20screen%20Driver%20under%20macOS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Touch - screen Driver under macOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Customize%20the%20monitor%20icon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize the monitor icon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../High%20Customization/Customization%20of%20Integrated%20Graphics%20Interface%20Output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customization of Integrated Graphics Interface Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Perfect Hackintosh
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Perfect Hackintosh
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Perfect%20Hackintosh/Hackintosh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hackintosh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Perfect%20Hackintosh/Genuine%20Mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Genuine Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OC Error Troubleshooting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            OC Error Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Error%20Troubleshooting/Abnormal%20Log/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abnormal Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OC%20Error%20Troubleshooting/Normal%20Log/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/Usage%20method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/Question%20list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Question list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fevm-fn60g-hackintosh-and-sequoia-installation-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      FEVM FN60G Hackintosh and Sequoia Installation Tutorial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-installation-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre - installation Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre - installation Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Preparation:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Preparation:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solid-state-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solid - state Disk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-network-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wireless Network Card
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operating System:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-or-tools-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software or Tools Used:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software or Tools Used:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#md5-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      md5 Checker:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disk-partitioning-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disk Partitioning Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-disk-creation-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Disk Creation Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-usb-installation-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a USB Installation Disk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a USB Installation Disk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-the-installation-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download the Installation Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-md5-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify the md5 Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-the-installation-image-to-the-usb-create-the-installation-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Write the Installation Image to the USB (Create the Installation Image)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-the-efi-suitable-for-you" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find the EFI Suitable for You
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-the-efi-in-the-usb-installation-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace the EFI in the USB Installation Disk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-sequoia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Sequoia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Sequoia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bios-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIOS Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-macos-sequoia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install macOS Sequoia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation-system-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post - installation System Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post - installation System Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy-the-efi-in-the-usb-disk-to-the-hard-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy the EFI in the USB Disk to the Hard Disk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copy the EFI in the USB Disk to the Hard Disk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tool-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tool Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-line-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command - line Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command - line Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view-the-disk-partition-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      View the Disk Partition Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mount-the-efi-partition-of-the-solid-state-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mount the EFI Partition of the Solid - state Disk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mount-the-efi-partition-of-the-usb-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mount the EFI Partition of the USB Disk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-update-the-efi" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Update the EFI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Update the EFI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-the-efi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update the EFI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references-and-citations" class="md-nav__link">
+    <span class="md-ellipsis">
+      References and Citations:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>FEVM FN60G Hackintosh and Sequoia Installation Tutorial</h1>
+
+<p><a href="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-FN60G - V2.webp"><img alt="" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-FN60G-V2.webp" /></a></p>
+<h2 id="fevm-fn60g-hackintosh-and-sequoia-installation-tutorial"><a href="#fevm - fn60g黑苹果兼sequoia安装教程"></a>FEVM FN60G Hackintosh and Sequoia Installation Tutorial<a class="headerlink" href="#fevm-fn60g-hackintosh-and-sequoia-installation-tutorial" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Unconsciously, it has been ten years since I got in touch with Hackintosh. Thanks to all Hackintosh fans for accompanying me all the way. 2023 might be a year of alternation between 'black' and 'white'. Hackintosh has gradually entered its twilight years. Apple has gradually stopped fully supporting the Intel architecture. In the future, macOS might only support the arm platform for a period of time. After Sequoia, I don't know if there will be a macOS that supports the Intel architecture anymore. Everyone should cherish it while using it.</p>
+</blockquote>
+<h2 id="pre-installation-preparation"><a href="#安装前准备"></a>Pre - installation Preparation<a class="headerlink" href="#pre-installation-preparation" title="Permanent link">&para;</a></h2>
+<p>It's already the fall of 2024. On the same day as the Mid - Autumn Festival in China, Apple released the brand - new macOS Sequoia. Both the hardware and the macOS system itself have undergone earth - shaking changes.</p>
+<h3 id="hardware-preparation"><a href="#硬件准备"></a>Hardware Preparation:<a class="headerlink" href="#hardware-preparation" title="Permanent link">&para;</a></h3>
+<p>Before using macOS, you need to first understand the hardware limitations, that is, which hardware is supported and which is not.</p>
+<p>Currently, all the hardware of FEVM FN60G is compatible with macOS.</p>
+<h4 id="computer-configuration"><a href="#电脑配置"></a>Computer Configuration<a class="headerlink" href="#computer-configuration" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Model</th>
+<th>Supported or Not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>INTEL <code>i9 - 14900T</code> / <code>i9 - 13900T</code> / <code>i7 - 13700T</code></td>
+<td></td>
+</tr>
+<tr>
+<td>/ <code>i5 - 13600T</code> / <code>i5 - 13400F</code> / <code>i5 - 12400F</code></td>
+<td>Supported</td>
+<td></td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>Samsung / Crucial / Micron DDR5 5600MHz</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Integrated Graphics</td>
+<td>Intel® Iris® Xe Graphics eligible</td>
+<td>Not supported by macOS</td>
+</tr>
+<tr>
+<td>Dedicated Graphics Card</td>
+<td>AMD Radeon™ RX 6600M</td>
+<td>Supported, <code>HDMI</code> x1 <code>4K@144Hz</code></td>
+</tr>
+<tr>
+<td><code>DP</code> x2 <code>4K@144Hz</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Type - C</code> x1 <code>4K@144Hz</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Network Card</td>
+<td>BCM94360NG/Z3/Z4/INTEL AX2xx</td>
+<td>Supported, Intel AX2xx does not support AirDrop</td>
+</tr>
+<tr>
+<td>Bluetooth</td>
+<td>BCM94360NG/Z3/Z4/INTEL AX2xx</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Hard Disk 1</td>
+<td>PCI - E 4.0 up to 4TB</td>
+<td></td>
+</tr>
+<tr>
+<td>Crucial / YMTC particles + Maxio controller</td>
+<td>Supported</td>
+<td></td>
+</tr>
+<tr>
+<td>Hard Disk 2</td>
+<td>PCI - E 4.0 up to 4TB</td>
+<td></td>
+</tr>
+<tr>
+<td>Crucial / YMTC particles + Maxio controller</td>
+<td>Supported</td>
+<td></td>
+</tr>
+<tr>
+<td>USB</td>
+<td>10Gbps</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Audio / 3.5mm Headphone Jack</td>
+<td>ALC897 id:<code>98</code></td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Audio / HDMI Output</td>
+<td></td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>AirDrop</td>
+<td></td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Handoff</td>
+<td></td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Sidecar</td>
+<td></td>
+<td>Not supported</td>
+</tr>
+<tr>
+<td>Universal Control</td>
+<td></td>
+<td>Supported</td>
+</tr>
+</tbody>
+</table>
+<h4 id="solid-state-disk"><a href="#固态硬盘"></a>Solid - state Disk<a class="headerlink" href="#solid-state-disk" title="Permanent link">&para;</a></h4>
+<p>In most cases, all SATA - based drives are supported, and most NVMe drives are also supported. There are only a few exceptions:</p>
+<ul>
+<li>Samsung PM981(a) / PM991 and Micron 2200S NVMe SSD<ul>
+<li>These solid - state disks are not compatible (resulting in kernel <a href="https://github.com/acidanthera/NVMeFix/releases">crashes</a>), so <a href="https://github.com/acidanthera/NVMeFix/releases">NVMeFix.kext</a> is required to fix these kernel <a href="https://github.com/acidanthera/NVMeFix/releases">crashes</a>. Please note that even with <code>NVMeFix.kext</code>, these drives may still cause boot problems.</li>
+<li>Related to this, the Samsung 970 EVO Plus NVMe SSD also has the same problem, but it has been fixed in the firmware update. The firmware update can be obtained <a href="https://www.samsung.com/semiconductor/minisite/ssd/download/tools/">here</a> (via Samsung Magician or bootable ISO of Windows).</li>
+<li>Also note that macOS does not support laptops that use <a href="https://www.intel.com/content/www/us/en/architecture - and - technology/optane - memory.html">Intel Optane Memory</a> or <a href="https://www.micron.com/products/advanced - solutions/3d - xpoint - technology">Micron 3D XPoint</a> for HDD acceleration. Some users have reported success in Catalina, even with read - write support, but we strongly recommend that you remove the drive to prevent any potential boot problems.</li>
+</ul>
+</li>
+</ul>
+<h4 id="wireless-network-card"><a href="#无线网卡"></a>Wireless Network Card<a class="headerlink" href="#wireless-network-card" title="Permanent link">&para;</a></h4>
+<p>Supported m.2 NGFF wireless network cards:</p>
+<ul>
+<li>Broadcom:
+    &gt; Since Apple removed the driver for Broadcom network cards starting from Sonoma, Broadcom network cards are no longer driver - free. They need to be driven by patching with <code>OpenCore Legacy Patcher</code> [OCLP]. For the OCLP driving tutorial, <a href="https://blog.daliansky.net/OCLP.html">please go here</a>.
+    Due to space limitations, the available models include: <code>BCM94360Z3</code> / <code>BCM94360Z4</code> / <code>BCM94352Z</code>. Due to the space of the network card, it also does not support original Apple disassembled cards, etc.;</li>
+<li>INTEL:
+    Thanks to the <a href="https://openintelwireless.github.io/General/Installation.html">OpenIntelWireless</a> developed by the <a href="https://github.com/zxystd">@zxystd</a> team.</li>
+</ul>
+<h3 id="software-preparation"><a href="#软件准备"></a>Software Preparation<a class="headerlink" href="#software-preparation" title="Permanent link">&para;</a></h3>
+<h4 id="operating-system"><a href="#操作系统"></a>Operating System:<a class="headerlink" href="#operating-system" title="Permanent link">&para;</a></h4>
+<p>An operating system that can create an installation USB disk, including but not limited to macOS / Windows / Linux, etc.</p>
+<p>For example:</p>
+<ul>
+<li>Apple computers running macOS;</li>
+<li>Computers running Windows or PE;</li>
+<li>Linux systems running in Live CD mode, etc.;</li>
+</ul>
+<h4 id="software-or-tools-used"><a href="#软件或者用到的工具"></a>Software or Tools Used:<a class="headerlink" href="#software-or-tools-used" title="Permanent link">&para;</a></h4>
+<h5 id="md5-checker"><a href="#md5检查器"></a>md5 Checker:<a class="headerlink" href="#md5-checker" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Windows:<ul>
+<li><a href="https://www.winmd5.com/">WinMD5</a></li>
+</ul>
+</li>
+<li>macOS or Linux built - in:<ul>
+<li><code>md5</code> for macOS</li>
+<li><code>md5sum</code> for linux</li>
+</ul>
+</li>
+</ul>
+<h5 id="disk-partitioning-tool"><a href="#磁盘分区工具"></a>Disk Partitioning Tool<a class="headerlink" href="#disk-partitioning-tool" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Windows:<ul>
+<li><a href="https://www.diskgenius.cn/">Disk Genuis</a></li>
+</ul>
+</li>
+<li>macOS or Linux:<ul>
+<li>omitted</li>
+</ul>
+</li>
+</ul>
+<h5 id="usb-disk-creation-tool"><a href="#u盘制作工具"></a>USB Disk Creation Tool<a class="headerlink" href="#usb-disk-creation-tool" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="http://etcher.io/">etcher</a></li>
+<li><a href="https://www.acutesystems.com/scrtm.htm">transmac</a></li>
+</ul>
+<h4 id="create-a-usb-installation-disk"><a href="#创建usb安装盘"></a>Create a USB Installation Disk<a class="headerlink" href="#create-a-usb-installation-disk" title="Permanent link">&para;</a></h4>
+<h5 id="download-the-installation-image"><a href="#下载安装镜像"></a>Download the Installation Image<a class="headerlink" href="#download-the-installation-image" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Download from this site: <a href="https://blog.daliansky.net/categories/%E4%B8%8B%E8%BD%BD/%E9%95%9C%E5%83%8F/">please click to go</a></li>
+</ul>
+<h5 id="verify-the-md5-value"><a href="#校验md5值"></a>Verify the md5 Value<a class="headerlink" href="#verify-the-md5-value" title="Permanent link">&para;</a></h5>
+<ul>
+<li>In the Windows environment:
+    Use the <a href="https://www.winmd5.com/">WinMD5</a> downloaded just now to check whether the md5 value is correct. If the md5 values are different, <strong>you must redownload the installation image. Don't take chances</strong>.</li>
+<li>In the macOS environment:</li>
+</ul>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># md5 macOS\ Sequoia\ 15.0</span></span><br></pre></td></tr></tbody></table>
+
+<h5 id="write-the-installation-image-to-the-usb-create-the-installation-image"><a href="#将安装镜像写到usb上制作安装镜像"></a>Write the Installation Image to the USB (Create the Installation Image)<a class="headerlink" href="#write-the-installation-image-to-the-usb-create-the-installation-image" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Image creation:<ul>
+<li>Download <a href="https://etcher.io/">balenaEtcher</a>, select the installation image, select the USB disk to be created, and click <code>Flash</code>. <strong><em>Windows 10 needs to be run with administrator privileges</em></strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="find-the-efi-suitable-for-you"><a href="#查找适合自己的efi"></a>Find the EFI Suitable for You<a class="headerlink" href="#find-the-efi-suitable-for-you" title="Permanent link">&para;</a></h4>
+<ul>
+<li>This site: <a href="https://blog.daliansky.net/Hackintosh - long - term - maintenance - model - checklist.html">Hackintosh Hackintosh Long - term Maintenance Model Checklist</a></li>
+<li>Others:<ul>
+<li>PCbeta: <a href="http://bbs.pcbeta.com/">http://bbs.pcbeta.com</a></li>
+<li>tonymacx86: <a href="https://www.tonymacx86.com/">https://www.tonymacx86.com</a></li>
+<li>insanelymac: <a href="https://www.insanelymac.com/">insanelymac.com</a></li>
+<li>Google: <a href="https://www.google.com/">https://www.google.com</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="replace-the-efi-in-the-usb-installation-disk"><a href="#替换usb安装盘里的efi"></a>Replace the EFI in the USB Installation Disk<a class="headerlink" href="#replace-the-efi-in-the-usb-installation-disk" title="Permanent link">&para;</a></h4>
+<p>If the EFI that comes with the USB installation disk cannot complete the installation or the installation is not perfect, then you need to perform the operation of replacing the EFI.</p>
+<ul>
+<li>Operation process: (omitted)</li>
+</ul>
+<h2 id="install-sequoia"><a href="#安装sequoia"></a>Install Sequoia<a class="headerlink" href="#install-sequoia" title="Permanent link">&para;</a></h2>
+<h3 id="bios-settings"><a href="#bios-设置"></a>BIOS Settings<a class="headerlink" href="#bios-settings" title="Permanent link">&para;</a></h3>
+<p>Since the default factory BIOS of FN60G has been optimized for macOS, there is no need to set the BIOS options. This part is omitted.</p>
+<h3 id="install-macos-sequoia"><a href="#安装macos-sequoia"></a>Install macOS Sequoia<a class="headerlink" href="#install-macos-sequoia" title="Permanent link">&para;</a></h3>
+<p>Turn on the computer, press F7 to select USB disk boot, move the cursor to <code>EFI USB Device</code> and select the <code>OpenCore</code> partition to start:</p>
+<p><img alt="Sequoia_OC" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia_OC.webp" /></p>
+<p>Enter the main boot interface of <code>OpenCore</code>, select <code>Install macOS Sequoia</code>, and directly press Enter to enter the <code>OpenCore</code> boot. During this period, the boot log will be displayed, which is the common <code>-v</code> (verbose mode). If unfortunately it gets stuck, please take a picture and send it to the QQ group for help. You can also go to: <a href="https://blog.daliansky.net/Common - problems - and - solutions - in - macOS - BigSur - 11.0 - installation.html">Common Problems and Solutions in macOS BigSur 11.0 Installation</a>; those who don't know how to operate <code>OpenCore</code> please study in advance: <a href="https://blog.daliansky.net/OpenCore - BootLoader.html">In - depth Explanation of OpenCore</a></p>
+<p><img alt="Sonoma_Installer_03" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sonoma/Sonoma_Installer_02.webp" /></p>
+<p>Many users will encounter problems at this point. If there are problems, please enter the group to report and provide pictures of the problem and the machine configuration diagram. <strong>Asking questions without providing any information is irresponsible</strong>.</p>
+<p><img alt="Sequoia-Installer_003" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_003.webp" /></p>
+<p>This process takes 1 - 2 minutes. Wait patiently and enter the installation program.</p>
+<p>The installation interface appears. Select <code>Disk Utility</code> and click <code>Continue</code>.</p>
+<p><img alt="Sequoia-Installer_004" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_004.webp" /></p>
+<p>Enter <code>Disk Utility</code>, click as shown in the figure below, and select <code>Show All Devices</code>.</p>
+<p><img alt="Sequoia-Installer_005" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_005.webp" /></p>
+<blockquote>
+<p><strong><em>The operations performed in <code>Disk Utility</code> involve your data security. Please confirm carefully before operating. Otherwise, this site will not be responsible for all consequences caused thereby.</em></strong></p>
+</blockquote>
+<p><img alt="Sequoia-Installer_006" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_006.webp" /></p>
+<p>In the figure, directly erase the container instead of the entire disk. It can retain the EFI content previously copied into the EFI partition; <strong><em>In this example, <code>container disk2</code> is the name of the container to be installed. You can also click the <code>AMD Ventura volume</code> in the row below <code>container disk2</code>, and then click <code>Erase</code> in the upper - right corner. Please select the corresponding disk according to your device</em></strong></p>
+<p><img alt="Sequoia-Installer_007" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_007.webp" /></p>
+<p>Click <code>Erase</code>, enter in the pop - up window: Name: <code>Sequoia</code>; Format: <code>APFS</code>;</p>
+<blockquote>
+<p><strong><em>Assume that your disk is empty or the data has been backed up. Don't blame me for not reminding you!!!</em></strong></p>
+</blockquote>
+<p><img alt="Sequoia-Installer_008" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_008.webp" /></p>
+<p>Click <code>Erase</code>, then wait for the operation to end, click <code>Done</code>, and either choose <code>Quit Disk Utility</code> from the menu or press the red button in the upper - left corner of the window to leave the disk utility.</p>
+<p><img alt="Sequoia-Installer_009" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_009.webp" /></p>
+<p>Return to the installation interface, select <code>Install macOS Sequoia</code>, and click <code>Continue</code>.</p>
+<p><img alt="Sequoia-Installer_010" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_010.webp" /></p>
+<p>Click <code>Agree</code> to continue.</p>
+<p><img alt="Sequoia-Installer_011" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_011.webp" /></p>
+<p>Read the terms of the license agreement and click <code>Agree</code>.</p>
+<p><img alt="Sequoia-Installer_012" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_012.webp" /></p>
+<p>I have read and agreed to the terms of the software license agreement, click <code>Agree</code>.</p>
+<p><img alt="Sequoia-Installer_013" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_013.webp" /></p>
+<p>Select the disk volume label <code>Sequoia</code> to be installed and click <code>Continue</code>.</p>
+<p><img alt="Sequoia-Installer_014" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_014.webp" /></p>
+<p>It will pre - copy the installation files on the USB installation disk to the system partition to be installed. This process usually lasts 1 - 2 minutes. When there are about 12 minutes remaining, the system will automatically restart and enter the second stage of installation.</p>
+<p><img alt="Sequoia-Installer_015" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_015.webp" /></p>
+<p>Continue the installation after restarting. During the installation process, it usually restarts automatically 3 - 4 times.</p>
+<p><img alt="Sequoia-Installer_016" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_016.webp" /></p>
+<p><img alt="Sequoia-Installer_017" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_017.webp" /></p>
+<p><img alt="Sequoia-Installer_018" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_018.webp" /></p>
+<p><img alt="Sequoia-Installer_019" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_019.webp" /></p>
+<p><img alt="Sequoia-Installer_020" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_020.webp" /></p>
+<p>The installation time of Sonoma is usually twice that of Catalina. It also depends on the read - write speed of the solid - state disk. Please be patient. After the installation is completed, the setup wizard will be entered.</p>
+<p>Select <code>Country/Region</code>: <code>Mainland China</code>, and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_021" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_021.webp" /></p>
+<p>Set the keyboard, use the default values, and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_022" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_022.webp" /></p>
+<p>Enter the accessibility settings. By default, do not set and choose <code>Later</code> to continue.</p>
+<p><img alt="Sequoia-Installer_023" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_023.webp" /></p>
+<p>Enter the network connection settings and click <code>Other Network Options</code>.</p>
+<p>[Screenshot omitted]</p>
+<blockquote>
+<p>It is especially important to remind that: when the Hackintosh setup wizard is running, do not connect to the network, and do not log in to the <code>Apple ID</code>. You can log in to the <code>Apple ID</code> after entering the desktop.</p>
+</blockquote>
+<p>A prompt message pops up: <code>My computer is not connected to the Internet</code>, click the <code>Continue</code> button.</p>
+<p>The <code>Accessibility</code> option appears, click <code>Later</code> to continue.</p>
+<p><img alt="Sequoia-Installer_024" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_024.webp" /></p>
+<p>The <code>Data &amp; Privacy</code> option appears. After reading, click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_025" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_025.webp" /></p>
+<p>The <code>Migration Assistant</code> appears. If it's a fresh installation and you are not using <code>Time Machine</code> to restore data, please click <code>Later</code> to continue.</p>
+<p><img alt="Sequoia-Installer_026" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_026.webp" /></p>
+<p>The <code>Sign in with your Apple ID</code> option appears. Please select <code>Set up later</code>.</p>
+<p><img alt="Sequoia-Installer_027" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_027.webp" /></p>
+<p>Select <code>Skip</code> in the pop - up window.</p>
+<p>The <code>Terms and Conditions</code> appear. Please read them and then click <code>Agree</code> to continue.</p>
+<p><img alt="Sequoia-Installer_028" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_028.webp" /></p>
+<p>Click <code>Agree</code> again in the pop - up window to continue.</p>
+<p><img alt="Sequoia-Installer_029" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_029.webp" /></p>
+<p>The window for creating a user account appears. Enter the username and password, and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_030" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_030.webp" /></p>
+<p>The <code>Enable Location Services</code> window appears. Click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_031" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_031.webp" /></p>
+<p>The analysis window appears. Uncheck <code>Share Mac analysis with Apple</code> and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_032" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_032.webp" /></p>
+<p>The screen time window appears. Click <code>Set up later</code> to continue.</p>
+<p><img alt="Sequoia-Installer_033" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_033.webp" /></p>
+<p>The Siri setup interface appears. Click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_034" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_034.webp" /></p>
+<p>Select the Siri language and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_035" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_035.webp" /></p>
+<p>Enter the <code>Select Siri Voice</code> interface. Select <code>Voice 1</code> and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_036" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_036.webp" /></p>
+<p>Enter the Siri improvement and dictation interface. Select <code>Later</code> and click the <code>Continue</code> button.</p>
+<p><img alt="Sequoia-Installer_037" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_037.webp" /></p>
+<p>A pop - up interface appears, allowing you to choose the appearance.</p>
+<p><img alt="Sequoia-Installer_038" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_038.webp" /></p>
+<p>You can choose the light - colored theme or the dark - colored theme according to your personal preference, and click the <code>Continue</code> button.</p>
+<p>The <code>Welcome to MAC</code> interface appears. Click <code>Continue</code>.</p>
+<p><img alt="Sequoia-Installer_039" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_039.webp" /></p>
+<p>The setup wizard is completed. Depending on the selected theme, enter different interfaces respectively.</p>
+<p>After the desktop appears, the <code>Keyboard Setup Assistant</code> may pop up. Click the <code>Quit</code> button directly. In this way, the entire installation wizard is completed.</p>
+<p><img alt="Sequoia-Installer_040" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Sequoia-Installer_040.webp" /></p>
+<h2 id="post-installation-system-settings"><a href="#安装后的系统设置"></a>Post - installation System Settings<a class="headerlink" href="#post-installation-system-settings" title="Permanent link">&para;</a></h2>
+<p>After the system is installed, you can have a cup of coffee and get excited for a while. There are more arduous tasks waiting for you right away.</p>
+<p>First, open the terminal and enter the command:</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo spctl --master - disable        # Enable macOS to install applications from any source</span><br></pre></td></tr></tbody></table>
+
+<p>Enter the user password <strong>Note: The password will not be displayed on the screen</strong>.</p>
+<blockquote>
+<p>The purpose is to allow the installation of macOS applications downloaded from third - party sources.</p>
+</blockquote>
+<p>Continue to enter the command:</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm - rf /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist*</span><br></pre></td></tr></tbody></table>
+
+<blockquote>
+<p>The purpose is to clear the network devices and re - order them as: <code>en0</code> / <code>en1</code> / <code>en2</code>*, so that you can log in to the <code>app store</code> smoothly.</p>
+</blockquote>
+<p>Continue to enter the command:</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pmset - b hibernatemode 0        # Memory power supply, memory mirroring is not written to the hard disk</span><br><span class="line">sudo pmset - b acwake 0                # Turn off being awakened by devices under the same iCloud</span><br></pre></td></tr></tbody></table>
+
+<blockquote>
+<p>The purpose is to optimize power management and solve the problem of unable to wake up from hibernation.</p>
+</blockquote>
+<p>Continue to enter the command:</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></tbody></table>
+
+<p>Reboot the system.</p>
+<p>I have made a one - click execution script for the above commands. If the network connection is smooth, you can directly execute it:</p>
+<p>Open the terminal and enter the command:</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sh - c "<$(curl - fsSL https://mirror.ghproxy.com/https://raw.githubusercontent.com/daliansky/morefine - S500 - Hackintosh/main/Tools/morefine - s500.sh)>"</span><br></pre></td></tr></tbody></table>
+
+<p>Execution result:</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Executing the Hackintosh one - click optimization script. The script includes:</span><br><span class="line">Enable macOS to install applications from any source / Fix sleep wake - up / Fix unable to log in to the App Store;</span><br><span class="line">Please enter the password of the current user and then press Enter</span><br><span class="line">Password:</span><br><span class="line">The Hackintosh one - click optimization script has been executed. Please restart the machine!</span><br></pre></td></tr></tbody></table>
+
+<h3 id="copy-the-efi-in-the-usb-disk-to-the-hard-disk"><a href="#将u盘中的efi复制进硬盘"></a>Copy the EFI in the USB Disk to the Hard Disk<a class="headerlink" href="#copy-the-efi-in-the-usb-disk-to-the-hard-disk" title="Permanent link">&para;</a></h3>
+<h4 id="tool-section"><a href="#工具篇"></a>Tool Section<a class="headerlink" href="#tool-section" title="Permanent link">&para;</a></h4>
+<p>The purpose is to use macOS without USB disk boot, so it is the top - priority action.</p>
+<p>The simplest method: Use the tool <code>Hackintool</code>. <a href="https://github.com/headkaze/Hackintool/releases">Download the Hackintool tool</a> As shown in the figure:</p>
+<ol>
+<li>
+<p>Open the <code>Hackintool</code> tool and click the <code>Disk</code> icon.<br />
+<img alt="Hackintool_Disk" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Hackintool_Disk.webp" /></p>
+</li>
+<li>
+<p>Click the mount icon and enter the user password.<br />
+<img alt="Hackintool_Disk" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Hackintool_Disk_Mount.webp" /></p>
+</li>
+<li>
+<p>Click to mount the EFI partitions of the solid - state disk and the installation USB disk respectively, and open the folders.<br />
+<img alt="Hackintool_Disk" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Hackintool_Disk_Mount2.webp" /></p>
+</li>
+<li>
+<p>Copy the <code>EFI</code> directory in the EFI partition of the USB disk to the EFI partition of the solid - state disk.<br />
+<img alt="EFI Copy" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-EFI_Copy.webp" /></p>
+</li>
+</ol>
+<h4 id="command-line-section"><a href="#命令行篇"></a>Command - line Section<a class="headerlink" href="#command-line-section" title="Permanent link">&para;</a></h4>
+<h5 id="view-the-disk-partition-table"><a href="#查看磁盘分区表"></a>View the Disk Partition Table<a class="headerlink" href="#view-the-disk-partition-table" title="Permanent link">&para;</a></h5>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskutil list</span><br></pre></td></tr></tbody></table>
+
+<p>/dev/disk0(internal, physical):</p>
+<table>
+<thead>
+<tr>
+<th>#:</th>
+<th>TYPE</th>
+<th>NAME</th>
+<th>SIZE</th>
+<th>IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:</td>
+<td>GUID_partition_scheme</td>
+<td></td>
+<td>2.0 TB</td>
+<td>disk0</td>
+</tr>
+<tr>
+<td>1:</td>
+<td>EFI</td>
+<td>B550</td>
+<td>200 MB</td>
+<td>disk0s1</td>
+</tr>
+<tr>
+<td>2:</td>
+<td>Apple_APFS</td>
+<td>Container disk1</td>
+<td>2.0 TB</td>
+<td>disk0s2</td>
+</tr>
+</tbody>
+</table>
+<p>/dev/disk3(external, physical):</p>
+<table>
+<thead>
+<tr>
+<th>#:</th>
+<th>TYPE</th>
+<th>NAME</th>
+<th>SIZE</th>
+<th>IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:</td>
+<td>GUID_partition_scheme</td>
+<td></td>
+<td>15.5 GB</td>
+<td>Disk3</td>
+</tr>
+<tr>
+<td>1:</td>
+<td>EFI</td>
+<td>EFI</td>
+<td>200 MB</td>
+<td>disk3s1</td>
+</tr>
+<tr>
+<td>2:</td>
+<td>Apple_HFS</td>
+<td>Install macOS Ventura</td>
+<td>14.1 GB</td>
+<td>Disk3s2</td>
+</tr>
+<tr>
+<td>3:</td>
+<td>Microsoft Basic Data</td>
+<td>CLOVER</td>
+<td>299.9MB</td>
+<td>Disk3s3</td>
+</tr>
+<tr>
+<td>4:</td>
+<td>Microsoft Basic Data</td>
+<td>PE</td>
+<td>798.0MB</td>
+<td>Disk3s4</td>
+</tr>
+</tbody>
+</table>
+<h5 id="mount-the-efi-partition-of-the-solid-state-disk"><a href="#挂载固态硬盘efi分区"></a>Mount the EFI Partition of the Solid - state Disk<a class="headerlink" href="#mount-the-efi-partition-of-the-solid-state-disk" title="Permanent link">&para;</a></h5>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount disk0s1</span><br></pre></td></tr></tbody></table>
+
+<h5 id="mount-the-efi-partition-of-the-usb-disk"><a href="#挂载u盘efi分区"></a>Mount the EFI Partition of the USB Disk<a class="headerlink" href="#mount-the-efi-partition-of-the-usb-disk" title="Permanent link">&para;</a></h5>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount disk3s1</span><br></pre></td></tr></tbody></table>
+
+<p>Open Finder, note that there is a <code>.</code> after it.</p>
+<table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open.</span><br></pre></td></tr></tbody></table>
+
+<p>Two EFI partitions will be shown on the left. Copy the entire EFI directory of the USB disk to the EFI partition of the disk.</p>
+<p><img alt="EFI Copy" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-EFI_Copy.webp" /></p>
+<h3 id="how-to-update-the-efi"><a href="#如何更新-efi"></a>How to Update the EFI<a class="headerlink" href="#how-to-update-the-efi" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>The new EFI will also fix the problems that occur when updating the <code>OpenCore</code> version, and will also continuously provide support for future macOS versions.</p>
+</blockquote>
+<h4 id="update-the-efi"><a href="#更新-efi"></a>Update the EFI<a class="headerlink" href="#update-the-efi" title="Permanent link">&para;</a></h4>
+<p>Use the tool <code>Hackintool</code>. <a href="https://github.com/headkaze/Hackintool/releases">Download the Hackintool tool</a> As shown in the figure:</p>
+<ol>
+<li>Download the <code>Intel NUC9 EFI</code><ul>
+<li>GitHub repository: <a href="https://github.com/daliansky/Intel-NUC9-Hackintosh">https://github.com/daliansky/Intel-NUC9-Hackintosh</a></li>
+</ul>
+</li>
+<li>Open the <code>Hackintool</code> tool and click the <code>Disk</code> icon.</li>
+</ol>
+<p><img alt="Hackintool_Disk" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Mount_EFI.webp" /></p>
+<ol>
+<li>Remove the old <code>EFI</code> directory.</li>
+</ol>
+<p><img alt="Delete EFI" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-Remove_Trash.webp" /></p>
+<ol>
+<li>Copy the downloaded <code>EFI</code> directory to the EFI partition of the solid - state disk.</li>
+</ol>
+<p><img alt="EFI Copy" src="https://seanchang.github.io/picx-images-hosting/20241110/hackintosh.tools-EFI_Copy2.webp" /></p>
+<h2 id="acknowledgments"><a href="#acknowledgments"></a>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permanent link">&para;</a></h2>
+<ul>
+<li>macOS of <a href="https://www.apple.com/">Apple</a></li>
+<li>Projects maintained by <a href="https://github.com/rehabman">RehabMan</a>: <a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config">OS - X - Clover - Laptop - Config</a>, <a href="https://github.com/RehabMan/Laptop-DSDT-Patch">Laptop-DSDT-Patch</a>, <a href="https://github.com/RehabMan/OS-X-USB-Inject-All">OS - X - USB - Inject - All</a>, etc.</li>
+<li>Projects maintained by <a href="https://github.com/acidanthera">Acidanthera</a>: <a href="https://github.com/acidanthera/OpenCorePkg">OpenCorePkg</a>, <a href="https://github.com/acidanthera/Lilu">lilu</a>, <a href="https://github.com/acidanthera/AirportBrcmFixup">AirportBrcmFixup</a>, <a href="https://github.com/acidanthera/WhateverGreen">WhateverGreen</a>, <a href="https://github.com/acidanthera/VirtualSMC">VirtualSMC</a>, <a href="https://github.com/acidanthera/AppleALC">AppleALC</a>, <a href="https://github.com/acidanthera/BrcmPatchRAM">BrcmPatchRAM</a>, <a href="https://github.com/acidanthera/MaciASL">MaciASL</a>, etc.</li>
+<li>Tools provided by <a href="https://www.insanelymac.com/forum/profile/1364628 - headkaze/">headkaze</a>: <a href="https://github.com/headkaze/Hackintool">hackintool</a>, <a href="https://github.com/headkaze/PinConfigurator">PinConfigurator</a>, <a href="https://www.insanelymac.com/forum/topic/339175-brcmpatchram2-for-1015-catalina-broadcom-bluetooth-firmware-upload/">BrcmPatchRAM</a></li>
+<li>Projects maintained by <a href="https://github.com/CloverHackyColor">CloverHackyColor</a>: <a href="https://github.com/CloverHackyColor/CloverBootloader">CloverBootloader</a>, <a href="https://github.com/CloverHackyColor/CloverThemes">CloverThemes</a></li>
+<li>Projects maintained by <a href="https://github.com/ic005k/">ic005k</a>: <a href="https://github.com/ic005k/QtOpenCoreConfig">OpenCore Auxiliary Tools OpenCore Configurator OCAT</a></li>
+<li>Organized by Xianwu: <a href="https://github.com/daliansky/P - little">P - little</a>, <a href="https://github.com/daliansky/OC-little">OC - little</a></li>
+<li>Projects maintained by <a href="https://github.com/chris1111">chris1111</a>: <a href="https://github.com/chris1111/VoodooHDA - 2.9.2 - Clover - V15">VoodooHDA</a>, <a href="https://github.com/chris1111/Wireless-USB-Adapter-Clover">Wireless USB Adapter Clover</a></li>
+<li><a href="https://github.com/zxystd/itlwm">itlwm</a> and <a href="https://github.com/zxystd/IntelBluetoothFirmware">IntelBluetoothFirmware</a> developed by <a href="https://github.com/zxystd">zxystd</a></li>
+<li>Tools provided by <a href="https://github.com/lihaoyun6">lihaoyun6</a>: <a href="https://github.com/lihaoyun6/CPU - S">CPU - S</a>, <a href="https://github.com/lihaoyun6/macOS-Displays-icon">macOS - Displays - icon</a>, <a href="https://github.com/lihaoyun6/SidecarPatcher">SidecarPatcher</a></li>
+<li>Tools provided by <a href="https://github.com/xzhih">xzhih</a>: <a href="https://github.com/xzhih/one - key - hidpi">one - key - hidpi</a></li>
+<li><a href="https://blog.daliansky.net/OpenCore - BootLoader.html">In - depth Explanation of OpenCore</a> updated and maintained by <a href="https://github.com/williambj1">Bat.bat</a></li>
+<li><a href="https://blog.cloudops.ml/ocbook/">OpenCore 0.5 + Component Patches</a> and <a href="https://github.com/athlonreg/Common-patches-for-hackintosh">Common - patches - for - hackintosh</a> updated and maintained by <a href="https://github.com/athlonreg">athlonreg</a></li>
+<li><a href="https://github.com/daliansky/XiaoMi-Pro-Hackintosh">XiaoMi NoteBook Pro Hackintosh</a> and <a href="https://github.com/stevezhengshiqi/one-key-cpufriend">one-key-cpufriend</a> updated and maintained by <a href="https://github.com/stevezhengshiqi">stevezhengshiqi</a></li>
+<li>Configuration files of various platforms organized by <a href="https://github.com/Miracle-Sakuno">Miracle - Sakuno</a></li>
+<li><a href="https://blog.daliansky.net/github.com">github.com</a></li>
+<li><a href="https://blog.daliansky.net/gitee.io">gitee.io</a></li>
+<li><a href="https://blog.daliansky.net/coding.net">coding.net</a></li>
+</ul>
+<h2 id="references-and-citations"><a href="#references-and-citations"></a>References and Citations:<a class="headerlink" href="#references-and-citations" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://deviwiki.com/wiki/Dell">https://deviwiki.com/wiki/Dell</a></li>
+<li><a href="https://deviwiki.com/wiki/Dell_Wireless_1820A_(DW1820A)">https://deviwiki.com/wiki/Dell_Wireless_1820A_(DW1820A)</a></li>
+<li>Broadcom 4350 updated by <a href="https://blog.daliansky.net/[https://osxlatitude.com/profile/4953-herv%C3%A9/](https://osxlatitude.com/profile/4953-herv%C3%A9/)">Hervé</a>: <a href="https://osxlatitude.com/forums/topic/12169-bcm4350-cards-registry-of-cardslaptops-interop/">https://osxlatitude.com/forums/topic/12169-bcm4350-cards-registry-of-cardslaptops-interop/</a></li>
+<li>DW1820A - supported model list updated by <a href="https://blog.daliansky.net/[https://osxlatitude.com/profile/4953-herv%C3%A9/](https://osxlatitude.com/profile/4953-herv%C3%A9/)">Hervé</a>: <a href="https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojave/">https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojave/</a></li>
+<li>Bluetooth driver provided by <a href="https://osxlatitude.com/profile/129953 - nickhx/">nickhx</a>: <a href="https://osxlatitude.com/forums/topic/11540-dw1820a-for-7490-help/?do=findComment&amp;comment=92833">https://osxlatitude.com/forums/topic/11540-dw1820a-for-7490-help/?do=findComment&amp;comment=92833</a></li>
+<li><a href="https://blog.xjn819.com/?p = 543">Using OpenCore to Boot Hackintosh</a> and <a href="https://blog.xjn819.com/?p=317">The Correct Way to Use AptioMemoryFix.efi for 300 - series Motherboards (Revised Version)</a> by <a href="https://blog.xjn819.com/">xjn819</a></li>
+<li><a href="https://www.insanelymac.com/">insanelymac.com</a></li>
+<li><a href="https://www.tonymacx86.com/">tonymacx86.com</a></li>
+<li><a href="http://bbs.pcbeta.com/">bbs.pcbeta.com</a></li>
+<li><a href="https://applelife.ru/">applelife.ru</a></li>
+<li><a href="https://www.olarila.com/">olarila.com</a></li>
+<li><a href="https://github.com/Hackintoshlifeit">Hackintoshlifeit</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 - 2024 xuanyuan.me
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.xuanyuan.me/blog" target="_blank" rel="noopener" title="xuanyuan.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M341.52 285.56c33.65 0 82.34-6.94 82.34-47 .22-6.74.86-1.82-20.88-96.24-4.62-19.15-8.68-27.84-42.31-44.65-26.09-13.34-82.92-35.37-99.73-35.37-15.66 0-20.2 20.17-38.87 20.17-18 0-31.31-15.06-48.12-15.06-16.14 0-26.66 11-34.78 33.62-27.5 77.55-26.28 74.27-26.12 78.27 0 24.8 97.64 106.11 228.47 106.11M429 254.84c4.65 22 4.65 24.35 4.65 27.25 0 37.66-42.33 58.56-98 58.56-125.74.08-235.91-73.65-235.91-122.33a49.55 49.55 0 0 1 4.06-19.72C58.56 200.86 0 208.93 0 260.63c0 84.67 200.63 189 359.49 189 121.79 0 152.51-55.08 152.51-98.58 0-34.21-29.59-73.05-82.93-96.24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
