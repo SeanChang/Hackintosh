@@ -11,7 +11,7 @@ theme:
   icon:
       logo: material/apple
       repo: fontawesome/brands/git-alt
-  favicon: https://xuanyuan.me/hackintosh/logo.webp
+  favicon: https://xuanyuan.me/hackintosh/logo.png
   features:
       - navigation.tabs
       - navigation.tabs.sticky
