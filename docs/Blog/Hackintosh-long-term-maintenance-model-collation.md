@@ -1084,9 +1084,9 @@ BCM94360Z3 / [BCM94360Z4](  ) |  |
 
 ## [](#amd-ryzen)AMD Ryzen
 
-| **台式** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
-| AMD Vanilla OpenCore | [Link](https://github.com/AMD-OSX/AMD_Vanilla) | [Link](https://blog.csdn.net/qq_43547885/article/details/105687341) | AMD 通用安装补丁 |
+| AMD Vanilla OpenCore | [Link](https://github.com/AMD - OSX/AMD_Vanilla) | [Link](https://blog.csdn.net/qq_43547885/article/details/105687341) | General installation patch for AMD |
 | AMD Ryzen 安装教程 | [Link](https://github.com/MrNegativeTW/Ryzen-Hackintosh-Tutorial) [Link](https://github.com/doesprintfwork/Intel-AMD-Hackintosh-Guide) | [Link](https://mtwstudio.gitbook.io/ryzentosh/) | 适用于`10.12` `10.13` `10.14` |
 | ASRock B450 Gaming-ITX/ac | [Link](https://github.com/LemoFire/OpenCore-ASRock-B450-Gaming-ITX-ac) |  |  |
 | ASRock B450M Pro4 | [Link](https://github.com/dr03m/ASRock-B450M-Pro4-USB-Patch) |  |  |
@@ -1184,7 +1184,7 @@ MSI RX580 8GB Armor |
 
 ### [](#asrock-华擎)ASRock 华擎
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | ASRock B150M-HDV | [Link](https://github.com/Z-fly/ASRock-B150M-HDV-OpenCore-Hackintosh) |  | 原则上支持 6~9 代 Intel 所有 CPU，核显请自行修改。持续更新，类似配置可参考 |
 | ASRock deskmini 110 | [Link](https://github.com/suxiaogang/asrock-deskmini-110-hackintosh) |  |  |
@@ -1233,7 +1233,7 @@ Recommend：[BCM94360CD](  ) |
 
 ### [](#asus-华硕-2)ASUS 华硕
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | Asus B85 Pro Gamer | [Link](https://github.com/xl120022/ASUS-B85PG-E3-RX570-MAC10.15) |  | e3-1231v3 / rx570 |
 | Asus B85MG | [Link](https://github.com/samleong123/i5-4570-B85MG-HD4600-BigSur-Opencore-EFI) |  | i5-4570 |
@@ -1323,7 +1323,7 @@ Recommend：[BCM94360CD](  ) |
 
 ### [](#dell-戴尔-2)Dell 戴尔
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | Dell ChengMing 3980 | [Link](https://github.com/Triment/efi-hackintosh-chengming3980) |  | Recommend：[BCM94360CD](  ) |
 | Dell ChengMing 3991 | [Link](https://github.com/istarmeow/Hackintosh-Dell.ChengMing.3991-OpenCore.0.7.0-macOS.Big.Sur.11.4) |  |  |
@@ -1374,7 +1374,7 @@ Recommend：[BCM94360Z4](  ) |
 
 ### [](#gigabyte-技嘉-2)Gigabyte 技嘉
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | Gigabyte GB-BXi5H-4200 系列主板 | [Link](https://github.com/RehabMan/Gigabyte-BRIX-s-DSDT-Patch) | [Link](https://www.tonymacx86.com/threads/guide-gigabyte-brix-using-clover-uefi-gb-bxi5h-4200-gb-bxi5-4570r-gb-bxi7-4770r.261710/) | 技嘉 GB-BXi5H-4200 系列主板 |
 | Gigabyte B85-HD3 | [Link](https://github.com/lttztt/B85-i5_4590-HACKINTOSH-Clover-EFI) |  | i5-4590 / RX570 |
@@ -1490,7 +1490,7 @@ Recommend：[BCM94360CD](  ) |
 
 ### [](#hp-惠普-2)HP 惠普
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | HP 288 Pro G5 | [Link](https://github.com/liuqqqhuan/HP-288PRO-G5-EFI) |  |  |
 | HP Compaq Pro 4300 | [Link](https://github.com/ichelash/HP4300EFI) |  |  |
@@ -1529,7 +1529,7 @@ AMD Radeon RX 580 |
 
 ### [](#intel-英特尔-2)Intel 英特尔
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | Intel NUC 5、6、7、8 系列 | [Link](https://github.com/RehabMan/Intel-NUC-DSDT-Patch) | [Link](https://www.tonymacx86.com/threads/guide-intel-kaby-lake-nuc7-using-clover-uefi-nuc7i7bnh-nuc7i5bnk-nuc7i3bnh-etc.261711/) | mini 主机 |
 | NUC9QNX | [Link](https://github.com/daliansky/Intel-NUC9-Hackintosh) | [Link](https://item.taobao.com/item.htm?id=732931461537) [Link](https://blog.daliansky.net/Intel-NUC9-Hackintosh-and-macOS-Sonoma-Installation-Tutorial.html) |    
@@ -1549,7 +1549,7 @@ Recommend：[BCM94360Z3](  ) |
 
 ### [](#lenovo-联想-2)Lenovo 联想
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | 联想 Lenovo 启天 M415-D339 | [Link](https://github.com/static-host/Hackintosh-OpenCore) |  |  |
 | 联想 Lenovo 启天 M420-D046© | [Link](https://github.com/crysehillmes/Hackintosh-Lenovo-M420-D046-C) [Link](https://github.com/july929/Lenovo-QiTian-M420-i3-8100-UHD630-OpenCore-EFI) | [Link](https://github.com/crysehillmes/Hackintosh-Lenovo-M420-D046-C/blob/main/README.cn.md) |  |
@@ -1584,7 +1584,7 @@ MobileWorkStation | [Link](https://github.com/p455555555/Thinkpad-P1-EFI) |  | R
 
 ### [](#msi-微星-2)MSI 微星
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | MSI B250M-E | [Link](https://github.com/rakiy/Hackintosh_MSI_B250M_EFI) |  |  |
 | MSI B250 GAMING PRO CARBON | [Link](https://github.com/AurelienAudero/i5-7400-EFI-by-Aure) |  |  |
@@ -1654,7 +1654,7 @@ Recommend：[BCM94360CD]( ) |
 
 ### [](#mini-迷你系列)Mini 迷你系列
 
-| **台式（部分）** | 发布地址 | 教程地址 | 备注 |
+| **Desktop** | Release Address | Tutorial Address | Remarks |
 | --- | --- | --- | --- |
 | Asus PN62 | [Link](https://github.com/cuteribs/hackintosh/tree/master/ASUS_PN62) |  |  |
 | **Beelink SEi8** | [Link](https://github.com/daliansky/Beelink-SEI8-Hackintosh) | [Link](https://item.taobao.com/item.htm?id=675661145519) |    
