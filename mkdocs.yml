@@ -20,15 +20,15 @@ theme:
       - search.share
   palette:
     # Toggle light mode
-    - scheme: default
-      primary: indigo
+    - scheme: slate
+      primary: black
       accent: indigo
       toggle:
         icon: material/weather-night
         name: dark mode
     # Toggle dark mode
-    - scheme: slate
-      primary: black
+    - scheme: default
+      primary: indigo
       accent: blue
       toggle:
         icon: material/weather-sunny
@@ -54,15 +54,15 @@ nav:
   - Introduction:
     - Background: "Introduction/Background.md"
     - Precautions: "Introduction/Precautions.md"
-  - Basic knowledge:
-    - Introduction: "Basic knowledge/Introduction.md"
-    - Drivers: "Basic knowledge/Drivers.md"
-    - Hardware: "Basic knowledge/Hardware.md"
-    - Terminology: "Basic knowledge/Terminology.md"
-  - USB flash drive creation:
-    - Download the image: "USB flash drive creation/Download the image.md"
-    - Write to the image: "USB flash drive creation/Write to the image.md"
-    - Structural Explanation: "USB flash drive creation/Structural Explanation.md"
+  - Basic:
+    - Introduction: "Basic/Introduction.md"
+    - Drivers: "Basic/Drivers.md"
+    - Hardware: "Basic/Hardware.md"
+    - Terminology: "Basic/Terminology.md"
+  - USB Drive:
+    - Download the image: "USB Drive/Download the image.md"
+    - Write to the image: "USB Drive/Write to the image.md"
+    - Structural Explanation: "USB Drive/Structural Explanation.md"
   - Preparation:
     - BIOS settings: "Preparation/BIOS settings.md"
     - Original file structure: "Preparation/OC file structure.md"
@@ -72,15 +72,15 @@ nav:
     - OC editor: "Preparation/OC editor.md"
     - Preliminary configuration: "Preparation/Preliminary configuration.md"
     - Kexts fine - tuning: "Preparation/Kexts fine - tuning.md"
-  - OpenCore Configuration:
-    - Quiks: "OpenCore Configuration/Quiks.md"
-    - UEFI: "OpenCore Configuration/UEFI.md"
-    - PCI: "OpenCore Configuration/PCI.md"
-    - Kernel: "OpenCore Configuration/Kernel.md"
-    - Misc: "OpenCore Configuration/Misc.md"
-    - NVRAM: "OpenCore Configuration/NVRAM.md"
-    - SMBIOS: "OpenCore Configuration/SMBIOS.md"
-    - config.list: "OpenCore Configuration/config.list.md"
+  - OC Config:
+    - Quiks: "OC Config/Quiks.md"
+    - UEFI: "OC Config/UEFI.md"
+    - PCI: "OC Config/PCI.md"
+    - Kernel: "OC Config/Kernel.md"
+    - Misc: "OC Config/Misc.md"
+    - NVRAM: "OC Config/NVRAM.md"
+    - SMBIOS: "OC Config/SMBIOS.md"
+    - config.list: "OC Config/config.list.md"
   - Demonstration:
     - Machine Overview: "Demonstration/Machine Overview.md"
     - BIOS: "Demonstration/BIOS.md"
@@ -88,26 +88,26 @@ nav:
     - WinNTSetup: "Demonstration/WinNTSetup.md"
     - Hackintosh: "Demonstration/Hackintosh.md"
     - Complete Success: "Demonstration/Complete Success.md"
-  - Professional customization:
-    - USB customization: "Professional customization/USB customization.md"
-    - Compile the touchpad driver: "Professional customization/Compile the touchpad driver.md"
-    - Touchpad Interrupt Example: "Professional customization/Touchpad Interrupt Example.md"
-    - Dual - graphics - card display on a desktop computer: "Professional customization/Dual - graphics - card display on a desktop computer.md"
-    - Enable HiDPi: "Professional customization/Enable HiDPi.md"
-    - Troubleshooting Sleep Issues: "Professional customization/Troubleshooting Sleep Issues.md"
-    - Bluetooth in macOS 12: "Professional customization/Bluetooth in macOS 12.md"
-    - Mask the unsupported hard drives: "Professional customization/Mask the unsupported hard drives.md"
-    - AMD discrete graphics card optimization without driver installation: "Professional customization/AMD discrete graphics card optimization without driver installation.md"
-    - OC theme and boot entries: "Professional customization/OC theme and boot entries.md"
-    - Touch - screen Driver under macOS: "Professional customization/Touch - screen Driver under macOS.md"
-    - Customize the monitor icon: "Professional customization/Customize the monitor icon.md"
-    - Customization of Integrated Graphics Interface Output: "Professional customization/Customization of Integrated Graphics Interface Output.md"
+  - High Customization:
+    - USB customization: "High Customization/USB customization.md"
+    - Compile the touchpad driver: "High Customization/Compile the touchpad driver.md"
+    - Touchpad Interrupt Example: "High Customization/Touchpad Interrupt Example.md"
+    - Dual - graphics - card display on a desktop computer: "High Customization/Dual - graphics - card display on a desktop computer.md"
+    - Enable HiDPi: "High Customization/Enable HiDPi.md"
+    - Troubleshooting Sleep Issues: "High Customization/Troubleshooting Sleep Issues.md"
+    - Bluetooth in macOS 12: "High Customization/Bluetooth in macOS 12.md"
+    - Mask the unsupported hard drives: "High Customization/Mask the unsupported hard drives.md"
+    - AMD discrete graphics card optimization without driver installation: "High Customization/AMD discrete graphics card optimization without driver installation.md"
+    - OC theme and boot entries: "High Customization/OC theme and boot entries.md"
+    - Touch - screen Driver under macOS: "High Customization/Touch - screen Driver under macOS.md"
+    - Customize the monitor icon: "High Customization/Customize the monitor icon.md"
+    - Customization of Integrated Graphics Interface Output: "High Customization/Customization of Integrated Graphics Interface Output.md"
   - Perfect Hackintosh:
     - Hackintosh: "Perfect Hackintosh/Hackintosh.md"
     - Genuine Mac: "Perfect Hackintosh/Genuine Mac.md"
-  - OpenCore Error Troubleshooting:
-    - Abnormal Log: "OpenCore Error Troubleshooting/Abnormal Log.md"
-    - Normal Log: "OpenCore Error Troubleshooting/Normal Log.md"
-  - Frequently Asked Questions (FAQ):
-    - Usage method: "Frequently Asked Questions (FAQ)/Usage method.md"
-    - Question list: "Frequently Asked Questions (FAQ)/Question list.md"
+  - OC Error Troubleshooting:
+    - Abnormal Log: "OC Error Troubleshooting/Abnormal Log.md"
+    - Normal Log: "OC Error Troubleshooting/Normal Log.md"
+  - FAQ:
+    - Usage method: "FAQ/Usage method.md"
+    - Question list: "FAQ/Question list.md"
