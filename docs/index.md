@@ -3,7 +3,7 @@ Hackintosh is doomed to become history. However, it's a pity that until Hackinto
 
 Actually, [the OpenCore official documentation](https://dortania.github.io/OpenCore-Install-Guide/)is already very good. Most of the content of this tutorial will also be borrowed from the OpenCore official documentation. The original files of this tutorial have also been open - sourced, and the project address is:[https://github.com/SeanChang/Hackintosh](https://github.com/SeanChang/Hackintosh)
 
-
+##Guides
 |[Introduction](/Introduction/Background/)|[Basic knowledge](/Basic/Introduction/)|[USB flash drive creation](/USB Drive/Download the image/)|[Preparation](/Preparation/BIOS settings/)| [OpenCore Configuration](/OC Config/Quiks/) |
 | ----- | ----- | ----- | ----- | ----- |
 |**[Demonstration](/Demonstration/Machine Overview/)**|**[Professional customization](/High customization/USB customization/)**|**[Perfect Hackintosh](/Perfect Hackintosh/Hackintosh/)**|**[OpenCore Error Troubleshooting](/OC Error Troubleshooting/Abnormal Log/)**|**[FAQ](/FAQ/Question list/)**|
