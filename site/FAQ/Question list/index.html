@@ -6,7 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="macOS Sonoma and OS X Ventura Hackintosh instructions, tutorials, step-by-step how to guides and installation videos; Hackintosh systems, parts and more.">
+        <meta name="description" content="??? + question &quot;1. Wake from sleep with black screen or need to plug and unplug the monitor cable to turn on the screen and enter the system during boot.&quot;
+    Try adding the igfxonln = 1 parameter to the boot options, and you can also try adding the gfxrst = 1 parameter to the boot options.">
       
       
         <meta name="author" content="xuanyuan">
@@ -2117,7 +2118,7 @@
 <p><img alt="" src="https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-165407829091.webp" /> 
     Then, starting from macOS12.3, the boot option parameter has changed from the previous <code>dk.e1000 = 0</code> parameter to adding the <code>e1000 = 0</code> parameter. So, if it's incorrect, replace or add it.</p>
 <p>??? + question "13. USB works normally without customization, but if customized using USBToolBox, it will directly get stuck at APFS and can't enter the operating system."
-    This may have occurred on some USB3.1 devices such as ASMedia ASM1142. When <a href="/6 - Practical Postures/6 - 1/">customizing USB</a>, don't plug in this interface, and then choose <code>I</code> (ignore) at the following step:</p>
+    This may have occurred on some USB3.1 devices such as ASMedia ASM1142. When <a href="/High Customization/USB customization/">customizing USB</a>, don't plug in this interface, and then choose <code>I</code> (ignore) at the following step:</p>
 <p><img alt="" src="https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16494854148280.webp" /></p>
 <p>??? + question "14. The App Store of macOS 10.13.6 can't be used, and the download prompt is 'Try again from the Purchased page'."
     Actually, the App Store of 10.13.6 is too old. Update the browser and iTunes, and these mysterious problems can be solved:</p>
@@ -2139,7 +2140,7 @@ cd /Volumes/EFI &amp;&amp; rm -rf.Trashes
 </code></pre>
 <p>??? + question "19. After the installation code finishes running, the pictures of Magic Trackpad and Magic Mouse appear."
     There are two possibilities:</p>
-<pre><code>1. USB is not customized. It is recommended to refer to the [USB customization tutorial](/6 - Practical Postures/6 - 1.html#reloaded) to customize again.
+<pre><code>1. USB is not customized. It is recommended to refer to the [USB customization tutorial](/High Customization/USB customization/) to customize again.
 2. Keyboard and mouse drivers are missing. Just install `VoodooPS2Controller.kext`.
 </code></pre>
 <p>??? + question "20. Lenovo ThinkPad X13 20T3 with 10th - generation U actually has a pretty perfect Hackintosh, and sleep is also great."
@@ -2201,6 +2202,9 @@ The following is the comparison before and after adding the SSCN SSDT. It can be
 
 
 
+
+  
+  
 
 
 

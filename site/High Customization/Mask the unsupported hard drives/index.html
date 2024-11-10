@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="macOS Sonoma and OS X Ventura Hackintosh instructions, tutorials, step-by-step how to guides and installation videos; Hackintosh systems, parts and more.">
+        <meta name="description" content="Hackintosh often has problems with NVME hard drives. For example, common ones include Samsung PM961/PM981/PM981a/PM991 series, Micron 2200V MTFDHBA512TCK, Micron 2200S, etc. For details of hard drives with no solution, you can refer to the tutorial: Hardware Limitation - Hard Drive Support">
       
       
         <meta name="author" content="xuanyuan">
@@ -2166,7 +2166,7 @@
 
   <h1>Mask the unsupported hard drives</h1>
 
-<p>Hackintosh often has problems with NVME hard drives. For example, common ones include Samsung PM961/PM981/PM981a/PM991 series, Micron 2200V MTFDHBA512TCK, Micron 2200S, etc. For details of hard drives with no solution, you can refer to the tutorial: <a href="/1 - Basic Knowledge/1 - 2/#_2">Hardware Limitation - Hard Drive Support</a></p>
+<p>Hackintosh often has problems with NVME hard drives. For example, common ones include Samsung PM961/PM981/PM981a/PM991 series, Micron 2200V MTFDHBA512TCK, Micron 2200S, etc. For details of hard drives with no solution, you can refer to the tutorial: <a href="/Basic/Drivers/">Hardware Limitation - Hard Drive Support</a></p>
 <h2 id="pxpx-method">PXPX Method<a class="headerlink" href="#pxpx-method" title="Permanent link">&para;</a></h2>
 <p>You need to first find the specific hard drive path under Windows. It's different for different computers. The actual path depends on your actual situation:</p>
 <p>Then replace the content <code>_SB_.PCI0.RP21</code> below with the actual path you see, and then save the file as <strong>SSDT - RP.PXSX - disbale.aml</strong>. OC can load this SSDT:</p>
@@ -2260,6 +2260,9 @@
 
 
 
+
+  
+  
 
 
 

@@ -101,7 +101,7 @@ The BOOT boot folder contains the BOOTx64.ef boot file.
 
 ### OC/ACPI
 
-The compiled SSDT files are stored here, and the format is all.aml. For detailed information about SSDT, you can refer to [the following section](/Preparatory work/APCI&SSDT/)
+The compiled SSDT files are stored here, and the format is all.aml. For detailed information about SSDT, you can refer to [the following section](/Preparation/APCI&SSDT/)
 
 ### OC/Drivers
 
@@ -124,7 +124,7 @@ Some driver files are placed here, and these drivers all end with the.efi suffix
 
 ### OC/Kexts
 
-Some Kexts kernel - extension files are placed here, and the format is all.kext. For detailed information about Kexts, you can refer to [the following section](/Preparatory work/APCI&SSDT/)
+Some Kexts kernel - extension files are placed here, and the format is all.kext. For detailed information about Kexts, you can refer to [the following section](/Preparation/APCI&SSDT/)
 
 ### Resources
 

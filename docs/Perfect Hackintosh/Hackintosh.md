@@ -82,7 +82,7 @@ Hackintool can show the perfection situation of many drivers. Let's look at them
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16447318795376.webp)
 
 - First, pay attention to whether all network cards are built - in.
-- Whether the Bluetooth firmware can be displayed normally. If not, please try to re - [USB customization](/6 - Practical Postures/6 - 1/)
+- Whether the Bluetooth firmware can be displayed normally. If not, please try to re - [USB customization](/High Customization/USB customization/)
 - The graphics card model is recognized normally. The reason there is no integrated graphics here is that I used a headless ID, only for calculation. It is also recommended that everyone use it this way.
 - Besides the built - in sound card, HDMI audio - related information should also be seen in the audio device.
 - There is no problem with the hard disk. Basically, everyone's is normal.
@@ -113,7 +113,7 @@ Sapphire 6600XT Platinum Edition, unlock the power consumption limit, and do a l
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16448034866246.webp)
 
-The GPU score of Geekbench5 has always been unstable with relatively large errors. Everyone doesn't need to pay too much attention to the GPU score. By the way, for AMD graphics card optimization, you can refer to this chapter: [AMD free - drive discrete graphics card optimization](/6 - Practical Postures/6 - 9/)
+The GPU score of Geekbench5 has always been unstable with relatively large errors. Everyone doesn't need to pay too much attention to the GPU score. By the way, for AMD graphics card optimization, you can refer to this chapter: [AMD free - drive discrete graphics card optimization](/High Customization/Dual - graphics - card display on a desktop computer/)
 
 ### System Information
 
@@ -145,7 +145,7 @@ Mainly pay attention to whether the maximum connection speed reaches the specifi
 
 To be supplemented, no picture is attached for the moment.
 
-For desktops, the most perfect graphical situation is to see one graphics card. This is the default policy configuration of iMac. Regarding some people can see both integrated graphics and discrete graphics, in fact, this is not a standard configuration. Friends interested in this configuration can refer to: [Desktop dual - graphics card display](/6 - Practical Postures/6 - 4/)
+For desktops, the most perfect graphical situation is to see one graphics card. This is the default policy configuration of iMac. Regarding some people can see both integrated graphics and discrete graphics, in fact, this is not a standard configuration. Friends interested in this configuration can refer to: [Desktop dual - graphics card display](/High Customization/Dual - graphics - card display on a desktop computer/)
 
 The second controversial point is that there is no **EFI driver version** displayed for the graphics card. Genuine Mac basically shows [this information](/7 - Perfect Hackintosh/7 - 2/#_5).
 
@@ -153,7 +153,7 @@ In the early days of 10.15, injecting EFI driver version and other information o
 
 #### Bluetooth
 
-There's not much to say about this part. If the Bluetooth is driven, relevant Bluetooth information can be seen here. If your Bluetooth doesn't work properly, it's very likely related to USB customization. You can refer to: [USB customization](/6 - Practical Postures/6 - 1/). If it's still a problem after customization, it may also be related to [macOS 12 Bluetooth](/6 - Practical Postures/6 - 7/).
+There's not much to say about this part. If the Bluetooth is driven, relevant Bluetooth information can be seen here. If your Bluetooth doesn't work properly, it's very likely related to USB customization. You can refer to: [USB customization](/High Customization/USB customization/). If it's still a problem after customization, it may also be related to [macOS 12 Bluetooth](/High Customization/Bluetooth in macOS 12/).
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16450259535481.webp)
 
@@ -183,7 +183,7 @@ The system - built - in microphone can be recognized normally, and the Siri voic
 
 ### HiDPi
 
-macOS without HiDPi is soulless. 4K monitors generally have HiDPi enabled by default, and for monitors with lower resolutions, HiDPi needs to be enabled manually. For details of enabling, you can refer to: [Enabling HiDPi](/6 - Practical Postures/6 - 5/)
+macOS without HiDPi is soulless. 4K monitors generally have HiDPi enabled by default, and for monitors with lower resolutions, HiDPi needs to be enabled manually. For details of enabling, you can refer to: [Enabling HiDPi](/High Customization/Enable HiDPi/)
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16452004986806.webp)
 
@@ -199,7 +199,7 @@ iStat Menus can show more detailed temperature information:
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16450273871284.webp)
 
-I don't know why iStat Menus didn't recognize the fan rotation speed here either. But it's not a big problem. One thing to pay attention to here is that the GPU temperature of AMD is also recognized. For those who can't recognize the temperature of the discrete graphics card, you can refer to: [AMD free - drive discrete graphics card optimization](/6 - Practical Postures/6 - 9/)
+I don't know why iStat Menus didn't recognize the fan rotation speed here either. But it's not a big problem. One thing to pay attention to here is that the GPU temperature of AMD is also recognized. For those who can't recognize the temperature of the discrete graphics card, you can refer to: [AMD free - drive discrete graphics card optimization](/High Customization/Dual - graphics - card display on a desktop computer/)
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16450275226157.webp)
 
@@ -313,7 +313,7 @@ The touchpad should work in the most efficient GPIO mode, rather than the common
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16459603111142.webp) 
 
-The existence of gpioPin and gpioIRQ in the above figure is a sign of the GPIO interrupt mode. You can also judge by looking at the dmesg log. For advanced touchpad, you can refer to this article of mine: [Touchpad Interrupt Example](/6 - Practical Postures/6 - 3/) 
+The existence of gpioPin and gpioIRQ in the above figure is a sign of the GPIO interrupt mode. You can also judge by looking at the dmesg log. For advanced touchpad, you can refer to this article of mine: [Touchpad Interrupt Example](/High Customization/Touch - screen Driver under macOS/) 
 
 ### Brightness Adjustment
 

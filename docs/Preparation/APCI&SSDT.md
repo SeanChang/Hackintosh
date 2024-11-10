@@ -176,7 +176,7 @@ You can download your own ACPI files according to your computer model by referri
         * It needs to be used with the ACPI patch: **Change _OSI to XOSI**.
         * Devices without a trackpad such as NUC don't need this.
         * If this is unsuccessful, you can manually use [MaciASL](https://github.com/acidanthera/MaciASL/releases) to compile [SSDT - GPI0.dsl.zip](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/decompiled/SSDT - GPI0.dsl.zip) to replace XOSI.
-            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/6 - Practical Poses/6 - 3/).
+            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/High Customization/Touchpad Interrupt Example/).
     - [X] [SSDT - PNLF.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - PNLF.aml)
         * Fix laptop brightness control. NUC doesn't need this.
 
@@ -188,7 +188,7 @@ You can download your own ACPI files according to your computer model by referri
         * It needs to be used with the ACPI patch: **Change _OSI to XOSI**.
         * Devices without a trackpad such as NUC don't need this.
         * If this is unsuccessful, you can manually use [MaciASL](https://github.com/acidanthera/MaciASL/releases) to compile [SSDT - GPI0.dsl.zip](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/decompiled/SSDT - GPI0.dsl.zip) to replace XOSI.
-            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/6 - Practical Poses/6 - 3/).
+            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/High Customization/Touchpad Interrupt Example/).
     - [X] [SSDT - PNLF.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - PNLF.aml)
         * Fix laptop brightness control. NUC doesn't need this.
 
@@ -200,7 +200,7 @@ You can download your own ACPI files according to your computer model by referri
         * It needs to be used with the ACPI patch: **Change _OSI to XOSI**.
         * Devices without a trackpad such as NUC don't need this.
         * If this is unsuccessful, you can manually use [MaciASL](https://github.com/acidanthera/MaciASL/releases) to compile [SSDT - GPI0.dsl.zip](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/decompiled/SSDT - GPI0.dsl.zip) to replace XOSI.
-            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/6 - Practical Poses/6 - 3/).
+            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/High Customization/Touchpad Interrupt Example/).
     - [X] [SSDT - PNLF.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - PNLF.aml)
         * Fix laptop brightness control. NUC doesn't need this.
     - [X] [SSDT - AWAC.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - AWAC.aml) 
@@ -221,7 +221,7 @@ You can download your own ACPI files according to your computer model by referri
         * It needs to be used with the ACPI patch: **Change _OSI to XOSI**.
         * Devices without a trackpad such as NUC don't need this.
         * If this is unsuccessful, you can manually use [MaciASL](https://github.com/acidanthera/MaciASL/releases) to compile [SSDT - GPI0.dsl.zip](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/decompiled/SSDT - GPI0.dsl.zip) to replace XOSI.
-            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/6 - Practical Poses/6 - 3/).
+            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/High Customization/Touchpad Interrupt Example/).
     - [X] [SSDT - PNLF.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - PNLF.aml)
         * Fix laptop brightness control. NUC doesn't need this.
     - [X] [SSDT - AWAC.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - AWAC.aml) 
@@ -249,7 +249,7 @@ You can download your own ACPI files according to your computer model by referri
         * It needs to be used with the ACPI patch: **Change _OSI to XOSI**.
         * Devices without a trackpad such as NUC don't need this.
         * If this is unsuccessful, you can manually use [MaciASL](https://github.com/acidanthera/MaciASL/releases) to compile [SSDT - GPI0.dsl.zip](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/decompiled/SSDT - GPI0.dsl.zip) to replace XOSI.
-            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/6 - Practical Poses/6 - 3/).
+            - However, the interrupt difficulty is a bit high. You can refer to the content in this part: [Trackpad Interrupt Example](/6High Customization/Touchpad Interrupt Example/).
     - [X] [SSDT - PNLF.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - PNLF.aml)
         * Fix laptop brightness control. NUC doesn't need this.
     - [X] [SSDT - AWAC.aml](https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - AWAC.aml) 

@@ -1,4 +1,4 @@
-Hackintosh often has problems with NVME hard drives. For example, common ones include Samsung PM961/PM981/PM981a/PM991 series, Micron 2200V MTFDHBA512TCK, Micron 2200S, etc. For details of hard drives with no solution, you can refer to the tutorial: [Hardware Limitation - Hard Drive Support](/1 - Basic Knowledge/1 - 2/#_2)
+Hackintosh often has problems with NVME hard drives. For example, common ones include Samsung PM961/PM981/PM981a/PM991 series, Micron 2200V MTFDHBA512TCK, Micron 2200S, etc. For details of hard drives with no solution, you can refer to the tutorial: [Hardware Limitation - Hard Drive Support](/Basic/Drivers/)
 
 ## PXPX Method
 

@@ -10,25 +10,25 @@ First, copy the Sample.plist in the Doc directory to the EFI/OC/ directory and r
 
 ### Streamline Drivers
 
-Only a few necessary ones are left in Drivers. For details, you can refer to the previous [Drivers Explanation](/3 - Preparation Work/3 - 5/) section.
+Only a few necessary ones are left in Drivers. For details, you can refer to the previous [Drivers Explanation](/Preparation/Drivers/) section.
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16319606413798.webp)  
 
 ### Streamline Tools
 
-I'm not used to using Tools, so all the tools in it are deleted. For the detailed functions of the files in Tools, you can refer to the previous [OC File Structure](/Preparatory work/Original file structure/) section: 
+I'm not used to using Tools, so all the tools in it are deleted. For the detailed functions of the files in Tools, you can refer to the previous [OC File Structure](/Preparation/OC file structure/) section: 
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16319607035783.webp)  
 
 ### Place Your SSDT 
 
-According to the previous [Prepare ACPI](/Preparatory work/APCI&SSDT/) part, put your prepared SSDT in here: 
+According to the previous [Prepare ACPI](/Preparation/APCI&SSDT/) part, put your prepared SSDT in here: 
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16319607358816.webp)  
 
 ### Place Your Kexts
 
-According to the previous [Prepare Kexts](/Preparatory work/Kext/) part, put your prepared Kexts in here: 
+According to the previous [Prepare Kexts](/Preparation/Kext/) part, put your prepared Kexts in here: 
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-1631960794410.webp)  
 
@@ -86,7 +86,7 @@ Adding Kexts is a similar operation. I won't repeat it here. First, delete the o
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16320583374476.webp)  
 
-Of course, there are some techniques such as order for Kexts loading. These techniques will be introduced in detail in [the next chapter](3 - Preparation Work/3 - 8/). 
+Of course, there are some techniques such as order for Kexts loading. These techniques will be introduced in detail in [the next chapter](/Preparation/Kexts fine - tuning/). 
 
 #### Add Drivers
 
@@ -116,7 +116,7 @@ Adding Kexts is also a similar operation. However, OCAuxiliaryTools doesn't supp
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16320598968967.webp)  
 
-Of course, there are some techniques such as order for Kexts loading. These techniques will be introduced in detail in [the next chapter](3 - Preparation Work/3 - 8/). 
+Of course, there are some techniques such as order for Kexts loading. These techniques will be introduced in detail in [the next chapter](/Preparation/Kexts fine - tuning8/). 
 
 #### Add Drivers
 

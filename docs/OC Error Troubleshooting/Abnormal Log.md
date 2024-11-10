@@ -13,7 +13,7 @@ If the troubleshooting doesn't help, and there are still errors when referring t
 
 ## AppleUSBHostPort::createDevice: failed to create device
 
-![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-1647739675880.webp) This is caused by the conflict between XhciPortLimit and high - version macOS 11.3 +. You can first refer to the [USB customization section](/6 - Practical Postures/6 - 1.html#reloaded) to customize your USB ports, and then disable `XhciPortLimit` under Kernel -> Quirks.
+![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-1647739675880.webp) This is caused by the conflict between XhciPortLimit and high - version macOS 11.3 +. You can first refer to the [USB customization section](/High Customization/USB customization/) to customize your USB ports, and then disable `XhciPortLimit` under Kernel -> Quirks.
 
 ## ACPI Error:[\\\_SB\_.PCI0.XHC\_.RHUB.HS11] Namespace lookup failure
 

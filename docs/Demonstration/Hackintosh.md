@@ -1,6 +1,6 @@
 ## Making a Hackintosh USB Flash Drive
 
-You can refer to the previously written section: [USB Flash Drive Preparation](/2 - USB Flash Drive Making/2 - 1/) 
+You can refer to the previously written section: [USB Flash Drive Preparation](/USB Drive/Download the image/) 
 
 I have also open - sourced the EFI used for this model's installation this time on Github.
 

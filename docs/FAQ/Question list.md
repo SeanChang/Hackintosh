@@ -41,7 +41,7 @@
     Then, starting from macOS12.3, the boot option parameter has changed from the previous `dk.e1000 = 0` parameter to adding the `e1000 = 0` parameter. So, if it's incorrect, replace or add it.
 
 ??? + question "13. USB works normally without customization, but if customized using USBToolBox, it will directly get stuck at APFS and can't enter the operating system."
-    This may have occurred on some USB3.1 devices such as ASMedia ASM1142. When [customizing USB](/6 - Practical Postures/6 - 1/), don't plug in this interface, and then choose `I` (ignore) at the following step:
+    This may have occurred on some USB3.1 devices such as ASMedia ASM1142. When [customizing USB](/High Customization/USB customization/), don't plug in this interface, and then choose `I` (ignore) at the following step:
 
    ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16494854148280.webp)
 
@@ -73,7 +73,7 @@
 ??? + question "19. After the installation code finishes running, the pictures of Magic Trackpad and Magic Mouse appear."
     There are two possibilities:
 
-    1. USB is not customized. It is recommended to refer to the [USB customization tutorial](/6 - Practical Postures/6 - 1.html#reloaded) to customize again.
+    1. USB is not customized. It is recommended to refer to the [USB customization tutorial](/High Customization/USB customization/) to customize again.
     2. Keyboard and mouse drivers are missing. Just install `VoodooPS2Controller.kext`.
 
 ??? + question "20. Lenovo ThinkPad X13 20T3 with 10th - generation U actually has a pretty perfect Hackintosh, and sleep is also great."

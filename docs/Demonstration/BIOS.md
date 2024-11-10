@@ -1,4 +1,4 @@
-The BIOS [previous section](../../Preparatory work/Original file structure/) has been introduced. Here, let's directly list the final settings:
+The BIOS [previous section](../../Preparation/OC file structure/) has been introduced. Here, let's directly list the final settings:
 
 Motherboard model: GIGABYTE B360M AORUS PRO
 

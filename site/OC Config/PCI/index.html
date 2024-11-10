@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="macOS Sonoma and OS X Ventura Hackintosh instructions, tutorials, step-by-step how to guides and installation videos; Hackintosh systems, parts and more.">
+        <meta name="description" content="Device configurations are provided to macOS through dedicated buffers for setting PCI device properties, such as Intel buffer frame patches, sound card Layout ID, etc. Of course, the ID of the sound card can also be added directly in the form of alcid = xx through the boot entry.">
       
       
         <meta name="author" content="xuanyuan">
@@ -2632,36 +2632,36 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,snb - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,snb - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>10000300</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>10000300</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00000500</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>00000500</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th align="left">device - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">device - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>26010000</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>26010000</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>02010000</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>02010000</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 </tbody>
 </table>
@@ -2694,18 +2694,18 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>0A006601</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>0A006601</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>07006201</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>07006201</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 </tbody>
 </table>
@@ -2721,16 +2721,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>3A1E0000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>3A1E0000</code></td>
 </tr>
 </tbody>
 </table>
@@ -2782,36 +2782,36 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>0300220D</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>0300220D</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>04001204</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>04001204</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 <tr>
-<td align="left"><strong><code>07002216</code></strong></td>
-<td align="left">Another optional ID when the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>07002216</code></strong></td>
+<td style="text-align: left;">Another optional ID when the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th align="left">device - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">device - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>12040000</code></td>
-<td align="left">The device ID of the HD 4600 integrated graphics.</td>
+<td style="text-align: left;"><code>12040000</code></td>
+<td style="text-align: left;">The device ID of the HD 4600 integrated graphics.</td>
 </tr>
 </tbody>
 </table>
@@ -2819,36 +2819,36 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">AAPL,ig - platform - id</td>
-<td align="left">Data</td>
-<td align="left"><code>0300220D</code></td>
+<td style="text-align: left;">AAPL,ig - platform - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>0300220D</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>12040000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>12040000</code></td>
 </tr>
 </tbody>
 </table>
@@ -2857,31 +2857,31 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">AAPL,ig - platform - id</td>
-<td align="left">Data</td>
-<td align="left"><code>07002216</code></td>
+<td style="text-align: left;">AAPL,ig - platform - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>07002216</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -2931,18 +2931,18 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>00001219</code></strong></td>
-<td align="left">Used when the desktop iGPU is used to drive the monitor.</td>
+<td style="text-align: left;"><strong><code>00001219</code></strong></td>
+<td style="text-align: left;">Used when the desktop iGPU is used to drive the monitor.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>01001219</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>01001219</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 </tbody>
 </table>
@@ -2950,16 +2950,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>1B190000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>1B190000</code></td>
 </tr>
 </tbody>
 </table>
@@ -2967,36 +2967,36 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">AAPL,ig - platform - id</td>
-<td align="left">Data</td>
-<td align="left"><code>00001219</code></td>
+<td style="text-align: left;">AAPL,ig - platform - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00001219</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>1B190000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>1B190000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3046,18 +3046,18 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>00001259</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>00001259</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>03001259</code></strong></td>
-<td align="left">When the desktop iGPU is only used for calculation tasks and does not drive the monitor.</td>
+<td style="text-align: left;"><strong><code>03001259</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is only used for calculation tasks and does not drive the monitor.</td>
 </tr>
 </tbody>
 </table>
@@ -3065,26 +3065,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">AAPL,ig - platform - id</td>
-<td align="left">Data</td>
-<td align="left"><code>00001259</code></td>
+<td style="text-align: left;">AAPL,ig - platform - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00001259</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 </tbody>
 </table>
@@ -3128,22 +3128,22 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>07009B3E</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>07009B3E</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00009B3E</code></strong></td>
-<td align="left">If <code>07009B3E</code> doesn't work, you can consider using this ID.</td>
+<td style="text-align: left;"><strong><code>00009B3E</code></strong></td>
+<td style="text-align: left;">If <code>07009B3E</code> doesn't work, you can consider using this ID.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0300913E</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>0300913E</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 </tbody>
 </table>
@@ -3151,26 +3151,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">AAPL,ig - platform - id</td>
-<td align="left">Data</td>
-<td align="left"><code>07009B3E</code></td>
+<td style="text-align: left;">AAPL,ig - platform - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>07009B3E</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 </tbody>
 </table>
@@ -3218,22 +3218,22 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>07009B3E</code></strong></td>
-<td align="left">When the desktop iGPU is used to drive the output display signal.</td>
+<td style="text-align: left;"><strong><code>07009B3E</code></strong></td>
+<td style="text-align: left;">When the desktop iGPU is used to drive the output display signal.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00009B3E</code></strong></td>
-<td align="left">If <code>07009B3E</code> doesn't work, you can consider using this ID.</td>
+<td style="text-align: left;"><strong><code>00009B3E</code></strong></td>
+<td style="text-align: left;">If <code>07009B3E</code> doesn't work, you can consider using this ID.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0300C89B</code></strong></td>
-<td align="left">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
+<td style="text-align: left;"><strong><code>0300C89B</code></strong></td>
+<td style="text-align: left;">The integrated graphics is only used for calculation and does not drive the output display signal (recommended when there is a discrete graphics card).</td>
 </tr>
 </tbody>
 </table>
@@ -3241,26 +3241,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">AAPL,ig - platform - id</td>
-<td align="left">Data</td>
-<td align="left"><code>07009B3E</code></td>
+<td style="text-align: left;">AAPL,ig - platform - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>07009B3E</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 </tbody>
 </table>
@@ -3309,21 +3309,21 @@
 <table>
 <thead>
 <tr>
-<th align="left">Property</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - singlelink</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - singlelink</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3354,21 +3354,21 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,snb - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,snb - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>00000100</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">For laptops.</td>
+<td style="text-align: left;"><strong><code>00000100</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">For laptops.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>10000300</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">For Intel NUC.</td>
+<td style="text-align: left;"><strong><code>10000300</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">For Intel NUC.</td>
 </tr>
 </tbody>
 </table>
@@ -3384,16 +3384,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>3A1C0000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>3A1C0000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3452,31 +3452,31 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>03006601</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for monitors with 1366*768 or lower resolution.</td>
+<td style="text-align: left;"><strong><code>03006601</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for monitors with 1366*768 or lower resolution.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>04006601</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for monitors with 1600*900 or higher resolution.</td>
+<td style="text-align: left;"><strong><code>04006601</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for monitors with 1600*900 or higher resolution.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>09006601</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">If the above two IDs don't work, you can try this one, mainly for use with some eDP monitors.</td>
+<td style="text-align: left;"><strong><code>09006601</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">If the above two IDs don't work, you can try this one, mainly for use with some eDP monitors.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0B006601</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for Intel NUC.</td>
+<td style="text-align: left;"><strong><code>0B006601</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for Intel NUC.</td>
 </tr>
 </tbody>
 </table>
@@ -3561,26 +3561,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>0500260A</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended ID values for HD 5000, HD 5100, and HD 5200 integrated graphics.</td>
+<td style="text-align: left;"><strong><code>0500260A</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended ID values for HD 5000, HD 5100, and HD 5200 integrated graphics.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0600260A</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended ID values for HD 4200, HD 4400, and HD 4600 integrated graphics. Device - id is required.</td>
+<td style="text-align: left;"><strong><code>0600260A</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended ID values for HD 4200, HD 4400, and HD 4600 integrated graphics. Device - id is required.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0300220D</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended ID values for all NUCs with the Hasewell architecture. Device - id is required.</td>
+<td style="text-align: left;"><strong><code>0300220D</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended ID values for all NUCs with the Hasewell architecture. Device - id is required.</td>
 </tr>
 </tbody>
 </table>
@@ -3588,21 +3588,21 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - cursormem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - cursormem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3610,16 +3610,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>12040000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>12040000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3666,21 +3666,21 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>06002616</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for most laptops.</td>
+<td style="text-align: left;"><strong><code>06002616</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for most laptops.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>02001616</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for NUCs with the Broadwell architecture.</td>
+<td style="text-align: left;"><strong><code>02001616</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for NUCs with the Broadwell architecture.</td>
 </tr>
 </tbody>
 </table>
@@ -3688,16 +3688,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">data</td>
-<td align="left">26160000</td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">data</td>
+<td style="text-align: left;">26160000</td>
 </tr>
 </tbody>
 </table>
@@ -3705,26 +3705,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3771,46 +3771,46 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>00001619</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for HD 515, HD 520, HD 530, HD 540, HD 550, and P530 integrated graphics.</td>
+<td style="text-align: left;"><strong><code>00001619</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for HD 515, HD 520, HD 530, HD 540, HD 550, and P530 integrated graphics.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00001E19</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">If the above ID doesn't work, you can try this one.</td>
+<td style="text-align: left;"><strong><code>00001E19</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">If the above ID doesn't work, you can try this one.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00001B19</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for HD 510.</td>
+<td style="text-align: left;"><strong><code>00001B19</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for HD 510.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00001E19</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 515.</td>
+<td style="text-align: left;"><strong><code>00001E19</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 515.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>02001619</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 520/530.</td>
+<td style="text-align: left;"><strong><code>02001619</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 520/530.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>02002619</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 540/550.</td>
+<td style="text-align: left;"><strong><code>02002619</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 540/550.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>05003B19</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 580.</td>
+<td style="text-align: left;"><strong><code>05003B19</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 580.</td>
 </tr>
 </tbody>
 </table>
@@ -3818,16 +3818,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>02190000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>02190000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3835,16 +3835,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>16190000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>16190000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3852,26 +3852,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3918,41 +3918,41 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>00001B59</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for HD 615, HD 620, HD 630, HD 640, and HD 650.</td>
+<td style="text-align: left;"><strong><code>00001B59</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for HD 615, HD 620, HD 630, HD 640, and HD 650.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00001659</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">If <code>00001B59</code> fails to accelerate, you can try this value.</td>
+<td style="text-align: left;"><strong><code>00001659</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">If <code>00001B59</code> fails to accelerate, you can try this value.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0000C087</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for UHD 617 of Amber Lake and UHD 62 of Kaby Lake - R.</td>
+<td style="text-align: left;"><strong><code>0000C087</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for UHD 617 of Amber Lake and UHD 62 of Kaby Lake - R.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00001E59</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 615.</td>
+<td style="text-align: left;"><strong><code>00001E59</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 615.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00001B59</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 630.</td>
+<td style="text-align: left;"><strong><code>00001B59</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 630.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>02002659</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for HD 640/650.</td>
+<td style="text-align: left;"><strong><code>02002659</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for HD 640/650.</td>
 </tr>
 </tbody>
 </table>
@@ -3960,16 +3960,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>16590000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>16590000</code></td>
 </tr>
 </tbody>
 </table>
@@ -3990,26 +3990,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4056,31 +4056,31 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>0900A53E</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for UHD 630.</td>
+<td style="text-align: left;"><strong><code>0900A53E</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for UHD 630.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00009B3E</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for UHD 620.</td>
+<td style="text-align: left;"><strong><code>00009B3E</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for UHD 620.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>07009B3E</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for UHD 620/630.</td>
+<td style="text-align: left;"><strong><code>07009B3E</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for UHD 620/630.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0000A53E</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for UHD 655.</td>
+<td style="text-align: left;"><strong><code>0000A53E</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for UHD 655.</td>
 </tr>
 </tbody>
 </table>
@@ -4088,16 +4088,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>9B3E0000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>9B3E0000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4105,16 +4105,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>9B3E0000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>9B3E0000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4122,26 +4122,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4188,31 +4188,31 @@
 <table>
 <thead>
 <tr>
-<th align="left">AAPL,ig - platform - id</th>
-<th align="left">Type</th>
-<th align="left">Explanation</th>
+<th style="text-align: left;">AAPL,ig - platform - id</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong><code>0900A53E</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for UHD 630.</td>
+<td style="text-align: left;"><strong><code>0900A53E</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for UHD 630.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>00009B3E</code></strong></td>
-<td align="left">Laptop</td>
-<td align="left">Recommended for UHD 620.</td>
+<td style="text-align: left;"><strong><code>00009B3E</code></strong></td>
+<td style="text-align: left;">Laptop</td>
+<td style="text-align: left;">Recommended for UHD 620.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>07009B3E</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for UHD 620/630.</td>
+<td style="text-align: left;"><strong><code>07009B3E</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for UHD 620/630.</td>
 </tr>
 <tr>
-<td align="left"><strong><code>0000A53E</code></strong></td>
-<td align="left">NUC</td>
-<td align="left">Recommended for UHD 655.</td>
+<td style="text-align: left;"><strong><code>0000A53E</code></strong></td>
+<td style="text-align: left;">NUC</td>
+<td style="text-align: left;">Recommended for UHD 655.</td>
 </tr>
 </tbody>
 </table>
@@ -4220,16 +4220,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>9B3E0000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>9B3E0000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4237,16 +4237,16 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">device - id</td>
-<td align="left">Data</td>
-<td align="left"><code>9B3E0000</code></td>
+<td style="text-align: left;">device - id</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>9B3E0000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4254,26 +4254,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Key</th>
-<th align="left">Type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Key</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">framebuffer - patch - enable</td>
-<td align="left">Data</td>
-<td align="left"><code>01000000</code></td>
+<td style="text-align: left;">framebuffer - patch - enable</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>01000000</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - stolenmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00003001</code></td>
+<td style="text-align: left;">framebuffer - stolenmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00003001</code></td>
 </tr>
 <tr>
-<td align="left">framebuffer - fbmem</td>
-<td align="left">Data</td>
-<td align="left"><code>00009000</code></td>
+<td style="text-align: left;">framebuffer - fbmem</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;"><code>00009000</code></td>
 </tr>
 </tbody>
 </table>
@@ -4294,6 +4294,9 @@
 
 
 
+
+  
+  
 
 
 
