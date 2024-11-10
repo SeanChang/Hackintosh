@@ -51,6 +51,8 @@ extra:
       link: https://www.xuanyuan.me/blog
       name: xuanyuan.me
 nav:
+  - Home:
+    - Introduction: "index.md"
   - Introduction:
     - Background: "Introduction/Background.md"
     - Precautions: "Introduction/Precautions.md"
