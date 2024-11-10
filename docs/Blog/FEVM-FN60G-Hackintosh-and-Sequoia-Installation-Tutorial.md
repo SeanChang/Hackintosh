@@ -113,7 +113,7 @@ For example:
 
 #### [](#查找适合自己的efi)Find the EFI Suitable for You
 
-+   This site: [Hackintosh Hackintosh Long - term Maintenance Model Checklist](https://blog.daliansky.net/Hackintosh - long - term - maintenance - model - checklist.html)
++   This site: [Hackintosh Hackintosh Long - term Maintenance Model Checklist](https://blog.daliansky.net/Hackintosh-long-term-maintenance-model-checklist.html)
 +   Others:
     +   PCbeta: [http://bbs.pcbeta.com](http://bbs.pcbeta.com/)
     +   tonymacx86: [https://www.tonymacx86.com](https://www.tonymacx86.com/)
