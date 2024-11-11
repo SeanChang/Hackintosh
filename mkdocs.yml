@@ -50,6 +50,12 @@ extra:
     - icon: fontawesome/brands/redhat
       link: https://www.xuanyuan.me/blog
       name: xuanyuan.me
+    - icon: fontawesome/brands/xbox
+      link: https://webgame.one/
+      name: WebGame
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/4xy
+      name: 4xy
 plugins:
   - search
   - meta-descriptions:
