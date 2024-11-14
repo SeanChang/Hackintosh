@@ -22,7 +22,25 @@
       
       
       <link rel="icon" href="https://xuanyuan.me/hackintosh/logo.png">
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7G5ZM2ZZ5J"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7G5ZM2ZZ5J');
+      </script>
+      <!-- Google ads -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6708353961519889" crossorigin="anonymous"></script>
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+      <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "owc23kvdeg");
+      </script>
     
     
       
@@ -2246,7 +2264,7 @@
 <p>Just add a <a href="https://github.com/dortania/Getting - Started - With - ACPI/blob/master/extra - files/compiled/SSDT - RHUB.aml">SSDT - RHUB.aml</a> to solve the problem. To fix the problem of some 400 - series motherboards, you need to turn off the RHUB device and force macOS to manually rebuild the ports.</p>
 <h2 id="appleusbhostportenumeratdevicecomplete_block_invoke">AppleUSBHostPort::enumeratDeviceComplete_block_invoke<a class="headerlink" href="#appleusbhostportenumeratdevicecomplete_block_invoke" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16487272072775.webp" /></p>
-<p>This situation indicates a problem with the USB. If changing to other ports doesn't solve the problem, try referring to the <a href="/6 - Practical Postures/6 - 1.html#reloaded">USB customization</a> tutorial to customize in advance.</p>
+<p>This situation indicates a problem with the USB. If changing to other ports doesn't solve the problem, try referring to the <a href="/High Customization/USB customization">USB customization</a> tutorial to customize in advance.</p>
 <h2 id="acpi-warning-unsupported-module-level">ACPI Warning: Unsupported module - level<a class="headerlink" href="#acpi-warning-unsupported-module-level" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16494861313450.webp" /></p>
 <p>It seems to be a hard disk problem with apfs_module_start:2568. Actually, the key to this error message is the ACPI error above. I encountered this on a Colorful motherboard. This is because there is a problem with the SSDT. Just find a way to troubleshoot the SSDT.</p>

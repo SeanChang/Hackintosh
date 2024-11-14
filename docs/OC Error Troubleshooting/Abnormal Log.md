@@ -27,7 +27,7 @@ Just add a [SSDT - RHUB.aml](https://github.com/dortania/Getting - Started - Wit
 
 ![](https://seanchang.github.io/picx-images-hosting/20241109/xuanyuan.me-16487272072775.webp)
 
-This situation indicates a problem with the USB. If changing to other ports doesn't solve the problem, try referring to the [USB customization](/6 - Practical Postures/6 - 1.html#reloaded) tutorial to customize in advance.
+This situation indicates a problem with the USB. If changing to other ports doesn't solve the problem, try referring to the [USB customization](/High Customization/USB customization) tutorial to customize in advance.
 
 ## ACPI Warning: Unsupported module - level  
 
