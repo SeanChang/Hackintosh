@@ -4,7 +4,7 @@ site_author: xuanyuan
 site_description: "macOS Sonoma and OS X Ventura Hackintosh instructions, tutorials, step-by-step how to guides and installation videos; Hackintosh systems, parts and more."
 repo_name: SeanChang/hackintosh
 repo_url: https://github.com/SeanChang/hackintosh
-copyright: Copyright &copy; 2022 - 2024 xuanyuan.me
+copyright: Copyright &copy; 2022 - 2024 <a href="https://linkedbus.com/">链客巴士</a>
 
 theme:
   name: material
